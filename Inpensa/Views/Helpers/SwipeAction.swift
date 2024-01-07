@@ -25,7 +25,7 @@ struct SwipeAction<Content: View>: View {
                 LazyHStack(spacing: 0) {
                     content
                         .rotationEffect(.init(degrees: direction == .leading ? -180 : 0))
-                        /// To Take Full Available Space
+                    /// To Take Full Available Space
                         .containerRelativeFrame(.horizontal)
                         .background(scheme == .dark ? .black : .white)
                         .background {

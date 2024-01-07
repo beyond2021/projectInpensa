@@ -36,34 +36,25 @@ struct TransactionCardView: View {
                             .padding(.vertical, 2)
                             .foregroundStyle(.white)
                             .background(transaction.category == Category.income.rawValue ? Color.green.gradient : Color.red.gradient, in: .capsule)
-                    
+                        
                     }
                 })
                 .lineLimit(1)
                 .hSpacing(.leading)
-                /*
-                if showCategory {
-                    Text(currencyString(transaction.amount,allowedDigits: 2))
-                        .fontWeight(.semibold)
-                        .padding(.horizontal, 5)
-                        .padding(.vertical, 2)
-                        .background(appTint, in: .capsule)
-                }
-                 */
                 Text(currencyString(transaction.amount, allowedDigits: 2))
                     .fontWeight(.semibold)
             }
             .padding(.horizontal, 15)
             .padding(.vertical, 10)
             .background(.background, in: .rect(cornerRadius: 10))
-
+            
         } actions: {
             Action(tint: .red, icon: "trash") {
                 // DELETING DATA
                 context.delete(transaction)
             }
         }
-
+        
     }
 }
 

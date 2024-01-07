@@ -27,18 +27,18 @@ struct ContentView: View {
     var body: some View {
         LockView(lockType: .both, lockPin: "9301", isEnabled: isAppLockEnabled, lockWhenAppGoesToBG: lockWhenAppGoesTobackground) {
             TabView(selection: $activeTab) {
-                 Recents() // page view
+                Recents() // page view
                     .tag(Tab.recents)
                     .tabItem { Tab.recents.tabContent }// from enum
                 Search()
-                   .tag(Tab.search)
-                   .tabItem { Tab.search.tabContent }// from enum
-               Graphs()
-                   .tag(Tab.chart)
-                   .tabItem { Tab.chart.tabContent }// from enum
+                    .tag(Tab.search)
+                    .tabItem { Tab.search.tabContent }// from enum
+                Graphs()
+                    .tag(Tab.chart)
+                    .tabItem { Tab.chart.tabContent }// from enum
                 Settings()
-                   .tag(Tab.settings)
-                   .tabItem { Tab.settings.tabContent }// from enum
+                    .tag(Tab.settings)
+                    .tabItem { Tab.settings.tabContent }// from enum
                 
             }
             .tint(appTint)
@@ -50,7 +50,7 @@ struct ContentView: View {
             })
             
         }
-   
+        
     }
 }
 

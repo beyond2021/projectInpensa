@@ -12,11 +12,11 @@ extension View {
     @ViewBuilder
     func hSpacing(_ alignment: Alignment = .center ) -> some View {
         self
-        .frame(maxWidth: .infinity, alignment: alignment)
+            .frame(maxWidth: .infinity, alignment: alignment)
     }
     func vSpacing(_ alignment: Alignment = .center ) -> some View {
         self
-        .frame(maxHeight: .infinity, alignment: alignment)
+            .frame(maxHeight: .infinity, alignment: alignment)
     }
     // To Cover the Notch
     @available(iOSApplicationExtension, unavailable)

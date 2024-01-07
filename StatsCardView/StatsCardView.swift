@@ -12,17 +12,17 @@ struct Provider: TimelineProvider {
     func placeholder(in context: Context) -> WidgetEntry {
         WidgetEntry(date: Date())
     }
-
+    
     func getSnapshot(in context: Context, completion: @escaping (WidgetEntry) -> ()) {
         let entry = WidgetEntry(date: Date())
         completion(entry)
     }
-
+    
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         var entries: [WidgetEntry] = []
         
         entries.append(.init(date: .now))
-
+        
         let timeline = Timeline(entries: entries, policy: .atEnd)
         completion(timeline)
     }
@@ -34,9 +34,9 @@ struct WidgetEntry: TimelineEntry {
 
 struct StatsCardViewEntryView : View {
     var entry: Provider.Entry
-
+    
     var body: some View {
-       
+        
         FilterTransactionsView(startDate: .now.startOfMonth, endDate: .now.endtOfMonth) { transcations in
             CardView(
                 income: total(transcations, category: .income),
@@ -48,7 +48,7 @@ struct StatsCardViewEntryView : View {
 
 struct StatsCardView: Widget {
     let kind: String = "StatsCardView"
-
+    
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
             StatsCardViewEntryView(entry: entry)

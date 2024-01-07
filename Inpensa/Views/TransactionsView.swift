@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SwiftData
+import WidgetKit
 
 struct TransactionsView: View {
     // Saving Data Environmental Properties
@@ -32,10 +33,10 @@ struct TransactionsView: View {
                     .hSpacing(.leading)
                 // Preview Transaction Card View
                 TransactionCardView(transaction: .init(title: title.isEmpty ? "Title" : title, remarks: remarks.isEmpty ? "Remarks" : remarks, 
-                    amount: amount,
-                    dateAdded: dateAdded,
-                    category: category,
-                    tintColor: tint))
+                                                       amount: amount,
+                                                       dateAdded: dateAdded,
+                                                       category: category,
+                                                       tintColor: tint))
                 CustomSection("Title", "Magic Keyboard", value: $title)
                 CustomSection("Remarks", "Apple Product", value: $remarks)
                 // Amount & Category checkbox
@@ -100,7 +101,7 @@ struct TransactionsView: View {
                 
             }
         })
-            
+        
     }
     //MARK: Save Item to Swift Data from all inputs
     func saveData() {
@@ -117,9 +118,11 @@ struct TransactionsView: View {
             context.insert(transaction)
             
         }
-
+        
         // Dismissing the View
         dismiss()
+        // Updating Widget
+        WidgetCenter.shared.reloadAllTimelines()
     }
     @ViewBuilder
     func CustomSection(_ title: String, _ hint: String,  value: Binding<String>) -> some View {
@@ -175,7 +178,7 @@ struct TransactionsView: View {
         formatter.maximumFractionDigits = 2
         return formatter
     }
-        
+    
 }
 
 

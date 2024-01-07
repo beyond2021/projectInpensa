@@ -39,7 +39,7 @@ struct LockView<Content: View>: View {
                         .fill(.black)
                         .ignoresSafeArea()
                     if (lockType == .both && !noBiometricAccess) || lockType == .biometric {
-                       //Biometrics
+                        //Biometrics
                         Group {
                             if noBiometricAccess {
                                 Text("Enable Biometric Authentication in Settings to unlock this View")
@@ -119,7 +119,7 @@ struct LockView<Content: View>: View {
                     } completion: {
                         pin = ""
                     }
-
+                    
                 }
             }
             // No Biometric || lockType must be set as Keypad
@@ -191,7 +191,7 @@ struct LockView<Content: View>: View {
             .padding(.top, 15)
             .overlay(alignment: .bottomTrailing, content: {
                 Button("Forgot Pin?", action: forgotPin)
-                   // .font(.callout)
+                // .font(.callout)
                     .foregroundStyle(.white)
                     .offset(y: 40)
             })
@@ -215,7 +215,7 @@ struct LockView<Content: View>: View {
                                 .contentShape(.rect)
                         })
                         .tint(.white)
-                
+                        
                     }
                     // 0 and Back Button (Delete)
                     Button(action: {
@@ -252,7 +252,7 @@ struct LockView<Content: View>: View {
                 if newValue.count == 4 {
                     /// Validate Pin
                     if lockPin == pin {
-                       // print("Unlocked")
+                        // print("Unlocked")
                         withAnimation(.snappy, completionCriteria: .logicallyComplete) {
                             isUnlocked = true
                         } completion: {
@@ -261,9 +261,9 @@ struct LockView<Content: View>: View {
                             // Reset nUmberPad View
                             noBiometricAccess = !isBiometricsAvailable
                         }
-
+                        
                     } else {
-                       // print("Wrong Pin")
+                        // print("Wrong Pin")
                         pin = ""
                         animateField.toggle()
                     }

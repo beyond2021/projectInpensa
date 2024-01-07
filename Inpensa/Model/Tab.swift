@@ -32,7 +32,7 @@ enum Tab: String {
             Image(systemName: "gearshape")
             Text(self.rawValue)
         }
-           
+        
     }
     
 }

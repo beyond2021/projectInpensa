@@ -39,7 +39,7 @@ struct Recents: View {
                                     .fontWeight(.semibold)
                                     .foregroundStyle(appTint
                                     )
-                                   
+                                
                             })
                             .hSpacing(.leading)
                             
@@ -58,13 +58,13 @@ struct Recents: View {
                                         TransactionCardView(transaction: transaction)
                                     }
                                     .buttonStyle(.plain)
-
+                                    
                                 }
-                        
+                                
                             }
-                           
-                        
-      
+                            
+                            
+                            
                         } header: {
                             HeaderView(size)
                         }
@@ -93,10 +93,10 @@ struct Recents: View {
                     }
                     .transition(.move(edge: Edge.leading))
                 }
-
-                }
-                .animation(.snappy, value: showFilterView)
-      
+                
+            }
+            .animation(.snappy, value: showFilterView)
+            
         }
     }
     // MARK: Header View
@@ -143,11 +143,11 @@ struct Recents: View {
             // Making Header visible only when scrolling
             .visualEffect { content, geometryProxy in
                 content
-                   .opacity(headerBGOpacity(geometryProxy))
+                    .opacity(headerBGOpacity(geometryProxy))
             }
-           
-                .padding(.horizontal, -15)
-                .padding(.top, -(safeArea.top + 15)) //Safe Area
+            
+            .padding(.horizontal, -15)
+            .padding(.top, -(safeArea.top + 15)) //Safe Area
         }
         
     }

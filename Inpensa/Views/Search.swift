@@ -18,7 +18,7 @@ struct Search: View {
     let searchPublisher = PassthroughSubject<String, Never>()
     var body: some View {
         NavigationStack {
-      ScrollView {
+            ScrollView {
                 LazyVStack( spacing: 12) {
                     FilterTransactionsView(category: selectedCategory, searchText: filteredText) { transactions in
                         ForEach(transactions) { transaction in
@@ -77,7 +77,7 @@ struct Search: View {
                     Image(systemName: "checkmark") // checkmark when category is swt
                 }
             }
-
+            
             
             
             
@@ -93,13 +93,13 @@ struct Search: View {
                         Image(systemName: "checkmark") // checkmark when category is swt
                     }
                 }
-
+                
                 
             }
         } label: {
             Image(systemName: "slider.vertical.3")
         }
-
+        
     }
 }
 

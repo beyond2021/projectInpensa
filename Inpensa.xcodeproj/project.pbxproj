@@ -15,10 +15,10 @@
 		224C90EB2B294CF2001F4BE7 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C90EA2B294CF2001F4BE7 /* Helpers.swift */; };
 		224C90ED2B2956B5001F4BE7 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C90EC2B2956B5001F4BE7 /* Tab.swift */; };
 		225078A02B4A7F17008752B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2250789F2B4A7F17008752B0 /* Assets.xcassets */; };
+		225078A32B4B40A7008752B0 /* StatsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225222242B4A345300D8BFB9 /* StatsCardView.swift */; };
 		2252221F2B4A345300D8BFB9 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225D0B122B491D6600478FFD /* WidgetKit.framework */; };
 		225222202B4A345300D8BFB9 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225D0B142B491D6600478FFD /* SwiftUI.framework */; };
 		225222232B4A345300D8BFB9 /* StatsCardViewBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225222222B4A345300D8BFB9 /* StatsCardViewBundle.swift */; };
-		225222252B4A345300D8BFB9 /* StatsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225222242B4A345300D8BFB9 /* StatsCardView.swift */; };
 		225222272B4A345400D8BFB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 225222262B4A345400D8BFB9 /* Assets.xcassets */; };
 		2252222B2B4A345400D8BFB9 /* StatsCardViewExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2252221E2B4A345300D8BFB9 /* StatsCardViewExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		225222312B4A3A0300D8BFB9 /* FilterTransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225D0B2B2B492D8F00478FFD /* FilterTransactionsView.swift */; };
@@ -26,7 +26,6 @@
 		225222332B4A3A7700D8BFB9 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA90952B32225200358135 /* View+Extensions.swift */; };
 		225222342B4A3A9400D8BFB9 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA90972B37268200358135 /* Date+Extensions.swift */; };
 		225222352B4A3AD400D8BFB9 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B916B62B2F153D00AE8208 /* Category.swift */; };
-		225222362B4A3B0A00D8BFB9 /* StatsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225222242B4A345300D8BFB9 /* StatsCardView.swift */; };
 		225222372B4A3B7100D8BFB9 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C90EA2B294CF2001F4BE7 /* Helpers.swift */; };
 		225222382B4A3FC900D8BFB9 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B916B82B2F15F700AE8208 /* Transaction.swift */; };
 		225222392B4A404200D8BFB9 /* TintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B916BA2B2F188700AE8208 /* TintColor.swift */; };
@@ -354,7 +353,6 @@
 				2247FEB42B4500A000C8DE1D /* ChartModel.swift in Sources */,
 				22FA90C22B3E3B1C00358135 /* TransactionsView.swift in Sources */,
 				224C90ED2B2956B5001F4BE7 /* Tab.swift in Sources */,
-				225222362B4A3B0A00D8BFB9 /* StatsCardView.swift in Sources */,
 				22B916C32B31C1AF00AE8208 /* Settings.swift in Sources */,
 				224C90D82B293DAC001F4BE7 /* InpensaApp.swift in Sources */,
 				22B916BF2B31C09E00AE8208 /* Search.swift in Sources */,
@@ -373,10 +371,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				225222312B4A3A0300D8BFB9 /* FilterTransactionsView.swift in Sources */,
-				225222252B4A345300D8BFB9 /* StatsCardView.swift in Sources */,
 				225222322B4A3A4A00D8BFB9 /* CardView.swift in Sources */,
 				225222372B4A3B7100D8BFB9 /* Helpers.swift in Sources */,
 				225222332B4A3A7700D8BFB9 /* View+Extensions.swift in Sources */,
+				225078A32B4B40A7008752B0 /* StatsCardView.swift in Sources */,
 				225222232B4A345300D8BFB9 /* StatsCardViewBundle.swift in Sources */,
 				225222342B4A3A9400D8BFB9 /* Date+Extensions.swift in Sources */,
 				225222352B4A3AD400D8BFB9 /* Category.swift in Sources */,

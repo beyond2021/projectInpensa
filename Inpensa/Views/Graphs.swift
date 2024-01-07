@@ -153,7 +153,7 @@ struct ListOfExpenses: View {
                     FilterTransactionsView(startDate: month.startOfMonth, endDate: month.endtOfMonth, category: .income) { transactions in
                         ForEach(transactions) { transaction in
                             NavigationLink {
-                               TransactionsView(editTransaction: transaction)
+                                TransactionsView(editTransaction: transaction)
                             } label: {
                                 TransactionCardView(transaction: transaction)
                             }
@@ -171,7 +171,7 @@ struct ListOfExpenses: View {
                     FilterTransactionsView(startDate: month.startOfMonth, endDate: month.endtOfMonth, category: .expense) { transactions in
                         ForEach(transactions) { transaction in
                             NavigationLink {
-                               TransactionsView(editTransaction: transaction)
+                                TransactionsView(editTransaction: transaction)
                             } label: {
                                 TransactionCardView(transaction: transaction)
                             }
