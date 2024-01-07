@@ -18,6 +18,7 @@ struct CardView: View {
                 HStack( spacing: 12, content: {
                    Text("\(currencyString(income - expense))")
                         .font(.title.bold())
+                        .foregroundStyle(Color.primary) // foregroungstyle primary means the apps accent color,  to get the system's primary color we need to use color,primary.
                     Image(systemName: expense > income ? "chart.line.downtrend.xyaxis" : "chart.line.uptrend.xyaxis")
                         .font(.title3)
                         .foregroundStyle(expense > income ? .red : .green)
@@ -26,7 +27,7 @@ struct CardView: View {
                 HStack( spacing: 0, content: {
                     ForEach(Category.allCases, id: \.rawValue) { category in
                         let symbolImage = category == .income ? "arrow.down" : "arrow.up"
-                        let tint = category == .income ? Color.green : Color.red
+                        let tint = category == .income ? appTint : Color.red
                         HStack(spacing: 10) {
                             Image(systemName: symbolImage)
                                 .font(.callout.bold())

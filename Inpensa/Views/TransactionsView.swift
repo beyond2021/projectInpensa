@@ -135,12 +135,12 @@ struct TransactionsView: View {
             
         })
     }
-    // Custom Checkbox
+    /// Custom CheckBox
     @ViewBuilder
     func CategoryCheckBox() -> some View {
-        HStack(spacing:10) {
+        HStack(spacing: 10) {
             ForEach(Category.allCases, id: \.rawValue) { category in
-                HStack(spacing: 5) {
+                VStack(spacing: 5) {
                     ZStack {
                         Image(systemName: "circle")
                             .font(.title3)
@@ -152,23 +152,21 @@ struct TransactionsView: View {
                                 .foregroundStyle(appTint)
                         }
                     }
+                    
+                    
                     Text(category.rawValue)
                         .font(.caption)
                 }
                 .contentShape(.rect)
                 .onTapGesture {
-                    // set
                     self.category = category
                 }
-                
             }
-            
         }
         .padding(.horizontal, 15)
         .padding(.vertical, 12)
-        .hSpacing(.leading)
+        .hSpacing(.center)
         .background(.background, in: .rect(cornerRadius: 10))
-        
     }
     // Money Number formatter
     var numberFormatter: NumberFormatter {

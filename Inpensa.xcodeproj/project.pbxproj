@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2247FEB42B4500A000C8DE1D /* ChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2247FEB32B4500A000C8DE1D /* ChartModel.swift */; };
 		224C90D82B293DAC001F4BE7 /* InpensaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C90D72B293DAC001F4BE7 /* InpensaApp.swift */; };
 		224C90DA2B293DAC001F4BE7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C90D92B293DAC001F4BE7 /* ContentView.swift */; };
 		224C90DC2B293DAE001F4BE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 224C90DB2B293DAE001F4BE7 /* Assets.xcassets */; };
@@ -14,6 +15,22 @@
 		224C90E82B294422001F4BE7 /* IntroScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C90E72B294422001F4BE7 /* IntroScene.swift */; };
 		224C90EB2B294CF2001F4BE7 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C90EA2B294CF2001F4BE7 /* Helpers.swift */; };
 		224C90ED2B2956B5001F4BE7 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C90EC2B2956B5001F4BE7 /* Tab.swift */; };
+		2252221F2B4A345300D8BFB9 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225D0B122B491D6600478FFD /* WidgetKit.framework */; };
+		225222202B4A345300D8BFB9 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225D0B142B491D6600478FFD /* SwiftUI.framework */; };
+		225222232B4A345300D8BFB9 /* StatsCardViewBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225222222B4A345300D8BFB9 /* StatsCardViewBundle.swift */; };
+		225222252B4A345300D8BFB9 /* StatsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225222242B4A345300D8BFB9 /* StatsCardView.swift */; };
+		225222272B4A345400D8BFB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 225222262B4A345400D8BFB9 /* Assets.xcassets */; };
+		2252222B2B4A345400D8BFB9 /* StatsCardViewExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2252221E2B4A345300D8BFB9 /* StatsCardViewExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		225222312B4A3A0300D8BFB9 /* FilterTransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225D0B2B2B492D8F00478FFD /* FilterTransactionsView.swift */; };
+		225222322B4A3A4A00D8BFB9 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA909A2B37337B00358135 /* CardView.swift */; };
+		225222332B4A3A7700D8BFB9 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA90952B32225200358135 /* View+Extensions.swift */; };
+		225222342B4A3A9400D8BFB9 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA90972B37268200358135 /* Date+Extensions.swift */; };
+		225222352B4A3AD400D8BFB9 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B916B62B2F153D00AE8208 /* Category.swift */; };
+		225222362B4A3B0A00D8BFB9 /* StatsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225222242B4A345300D8BFB9 /* StatsCardView.swift */; };
+		225222372B4A3B7100D8BFB9 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C90EA2B294CF2001F4BE7 /* Helpers.swift */; };
+		225222382B4A3FC900D8BFB9 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B916B82B2F15F700AE8208 /* Transaction.swift */; };
+		225222392B4A404200D8BFB9 /* TintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B916BA2B2F188700AE8208 /* TintColor.swift */; };
+		225D0B2C2B492D8F00478FFD /* FilterTransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225D0B2B2B492D8F00478FFD /* FilterTransactionsView.swift */; };
 		22B916B72B2F153D00AE8208 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B916B62B2F153D00AE8208 /* Category.swift */; };
 		22B916B92B2F15F700AE8208 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B916B82B2F15F700AE8208 /* Transaction.swift */; };
 		22B916BB2B2F188700AE8208 /* TintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B916BA2B2F188700AE8208 /* TintColor.swift */; };
@@ -21,7 +38,6 @@
 		22B916BF2B31C09E00AE8208 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B916BE2B31C09E00AE8208 /* Search.swift */; };
 		22B916C12B31C0BF00AE8208 /* Graphs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B916C02B31C0BF00AE8208 /* Graphs.swift */; };
 		22B916C32B31C1AF00AE8208 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B916C22B31C1AF00AE8208 /* Settings.swift */; };
-		22CEFD0A2B436175009A2721 /* FilterTransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CEFD092B436175009A2721 /* FilterTransactionsView.swift */; };
 		22FA90962B32225200358135 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA90952B32225200358135 /* View+Extensions.swift */; };
 		22FA90982B37268200358135 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA90972B37268200358135 /* Date+Extensions.swift */; };
 		22FA909B2B37337B00358135 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA909A2B37337B00358135 /* CardView.swift */; };
@@ -32,7 +48,32 @@
 		22FA90C22B3E3B1C00358135 /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA90C12B3E3B1C00358135 /* TransactionsView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		225222292B4A345400D8BFB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 224C90CC2B293DAC001F4BE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2252221D2B4A345300D8BFB9;
+			remoteInfo = StatsCardViewExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		225D0B212B491D6800478FFD /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2252222B2B4A345400D8BFB9 /* StatsCardViewExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2247FEB32B4500A000C8DE1D /* ChartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartModel.swift; sourceTree = "<group>"; };
 		224C90D42B293DAC001F4BE7 /* Inpensa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inpensa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		224C90D72B293DAC001F4BE7 /* InpensaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InpensaApp.swift; sourceTree = "<group>"; };
 		224C90D92B293DAC001F4BE7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -41,6 +82,15 @@
 		224C90E72B294422001F4BE7 /* IntroScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroScene.swift; sourceTree = "<group>"; };
 		224C90EA2B294CF2001F4BE7 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		224C90EC2B2956B5001F4BE7 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		2252221E2B4A345300D8BFB9 /* StatsCardViewExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StatsCardViewExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		225222222B4A345300D8BFB9 /* StatsCardViewBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsCardViewBundle.swift; sourceTree = "<group>"; };
+		225222242B4A345300D8BFB9 /* StatsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsCardView.swift; sourceTree = "<group>"; };
+		225222262B4A345400D8BFB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		225222282B4A345400D8BFB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		225222302B4A37CE00D8BFB9 /* StatsCardViewExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StatsCardViewExtension.entitlements; sourceTree = "<group>"; };
+		225D0B122B491D6600478FFD /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		225D0B142B491D6600478FFD /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		225D0B2B2B492D8F00478FFD /* FilterTransactionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterTransactionsView.swift; sourceTree = "<group>"; };
 		22B916B62B2F153D00AE8208 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		22B916B82B2F15F700AE8208 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		22B916BA2B2F188700AE8208 /* TintColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TintColor.swift; sourceTree = "<group>"; };
@@ -48,7 +98,6 @@
 		22B916BE2B31C09E00AE8208 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		22B916C02B31C0BF00AE8208 /* Graphs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graphs.swift; sourceTree = "<group>"; };
 		22B916C22B31C1AF00AE8208 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
-		22CEFD092B436175009A2721 /* FilterTransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTransactionsView.swift; sourceTree = "<group>"; };
 		22FA90952B32225200358135 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		22FA90972B37268200358135 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		22FA909A2B37337B00358135 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -67,13 +116,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2252221B2B4A345300D8BFB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				225222202B4A345300D8BFB9 /* SwiftUI.framework in Frameworks */,
+				2252221F2B4A345300D8BFB9 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		224C90CB2B293DAC001F4BE7 = {
 			isa = PBXGroup;
 			children = (
+				225222302B4A37CE00D8BFB9 /* StatsCardViewExtension.entitlements */,
 				224C90D62B293DAC001F4BE7 /* Inpensa */,
+				225222212B4A345300D8BFB9 /* StatsCardView */,
+				225D0B112B491D6600478FFD /* Frameworks */,
 				224C90D52B293DAC001F4BE7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				224C90D42B293DAC001F4BE7 /* Inpensa.app */,
+				2252221E2B4A345300D8BFB9 /* StatsCardViewExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,6 +191,7 @@
 				22B916B62B2F153D00AE8208 /* Category.swift */,
 				22B916B82B2F15F700AE8208 /* Transaction.swift */,
 				22B916BA2B2F188700AE8208 /* TintColor.swift */,
+				2247FEB32B4500A000C8DE1D /* ChartModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -143,15 +206,35 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		225222212B4A345300D8BFB9 /* StatsCardView */ = {
+			isa = PBXGroup;
+			children = (
+				225222222B4A345300D8BFB9 /* StatsCardViewBundle.swift */,
+				225222242B4A345300D8BFB9 /* StatsCardView.swift */,
+				225222262B4A345400D8BFB9 /* Assets.xcassets */,
+				225222282B4A345400D8BFB9 /* Info.plist */,
+			);
+			path = StatsCardView;
+			sourceTree = "<group>";
+		};
+		225D0B112B491D6600478FFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				225D0B122B491D6600478FFD /* WidgetKit.framework */,
+				225D0B142B491D6600478FFD /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		22FA90992B37335F00358135 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				225D0B2B2B492D8F00478FFD /* FilterTransactionsView.swift */,
 				22FA90BF2B3D819300358135 /* LockView.swift */,
 				22FA909E2B3A04AB00358135 /* SwipeAction.swift */,
 				22FA909A2B37337B00358135 /* CardView.swift */,
 				22FA909C2B37589A00358135 /* TransactionCardView.swift */,
 				22FA90A02B3A121B00358135 /* DateFilterView.swift */,
-				22CEFD092B436175009A2721 /* FilterTransactionsView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -166,15 +249,34 @@
 				224C90D02B293DAC001F4BE7 /* Sources */,
 				224C90D12B293DAC001F4BE7 /* Frameworks */,
 				224C90D22B293DAC001F4BE7 /* Resources */,
+				225D0B212B491D6800478FFD /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2252222A2B4A345400D8BFB9 /* PBXTargetDependency */,
 			);
 			name = Inpensa;
 			productName = Inpensa;
 			productReference = 224C90D42B293DAC001F4BE7 /* Inpensa.app */;
 			productType = "com.apple.product-type.application";
+		};
+		2252221D2B4A345300D8BFB9 /* StatsCardViewExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2252222C2B4A345400D8BFB9 /* Build configuration list for PBXNativeTarget "StatsCardViewExtension" */;
+			buildPhases = (
+				2252221A2B4A345300D8BFB9 /* Sources */,
+				2252221B2B4A345300D8BFB9 /* Frameworks */,
+				2252221C2B4A345300D8BFB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StatsCardViewExtension;
+			productName = StatsCardViewExtension;
+			productReference = 2252221E2B4A345300D8BFB9 /* StatsCardViewExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -183,11 +285,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1500;
+				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					224C90D32B293DAC001F4BE7 = {
 						CreatedOnToolsVersion = 15.0;
+					};
+					2252221D2B4A345300D8BFB9 = {
+						CreatedOnToolsVersion = 15.2;
 					};
 				};
 			};
@@ -205,6 +310,7 @@
 			projectRoot = "";
 			targets = (
 				224C90D32B293DAC001F4BE7 /* Inpensa */,
+				2252221D2B4A345300D8BFB9 /* StatsCardViewExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -216,6 +322,14 @@
 			files = (
 				224C90DF2B293DAE001F4BE7 /* Preview Assets.xcassets in Resources */,
 				224C90DC2B293DAE001F4BE7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2252221C2B4A345300D8BFB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				225222272B4A345400D8BFB9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,11 +345,14 @@
 				22FA90A12B3A121B00358135 /* DateFilterView.swift in Sources */,
 				224C90DA2B293DAC001F4BE7 /* ContentView.swift in Sources */,
 				224C90E82B294422001F4BE7 /* IntroScene.swift in Sources */,
+				225D0B2C2B492D8F00478FFD /* FilterTransactionsView.swift in Sources */,
 				22FA909B2B37337B00358135 /* CardView.swift in Sources */,
 				22FA909F2B3A04AB00358135 /* SwipeAction.swift in Sources */,
 				22B916B92B2F15F700AE8208 /* Transaction.swift in Sources */,
+				2247FEB42B4500A000C8DE1D /* ChartModel.swift in Sources */,
 				22FA90C22B3E3B1C00358135 /* TransactionsView.swift in Sources */,
 				224C90ED2B2956B5001F4BE7 /* Tab.swift in Sources */,
+				225222362B4A3B0A00D8BFB9 /* StatsCardView.swift in Sources */,
 				22B916C32B31C1AF00AE8208 /* Settings.swift in Sources */,
 				224C90D82B293DAC001F4BE7 /* InpensaApp.swift in Sources */,
 				22B916BF2B31C09E00AE8208 /* Search.swift in Sources */,
@@ -244,13 +361,37 @@
 				22FA90C02B3D819300358135 /* LockView.swift in Sources */,
 				224C90EB2B294CF2001F4BE7 /* Helpers.swift in Sources */,
 				22B916C12B31C0BF00AE8208 /* Graphs.swift in Sources */,
-				22CEFD0A2B436175009A2721 /* FilterTransactionsView.swift in Sources */,
 				22B916B72B2F153D00AE8208 /* Category.swift in Sources */,
 				22FA909D2B37589A00358135 /* TransactionCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2252221A2B4A345300D8BFB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				225222312B4A3A0300D8BFB9 /* FilterTransactionsView.swift in Sources */,
+				225222252B4A345300D8BFB9 /* StatsCardView.swift in Sources */,
+				225222322B4A3A4A00D8BFB9 /* CardView.swift in Sources */,
+				225222372B4A3B7100D8BFB9 /* Helpers.swift in Sources */,
+				225222332B4A3A7700D8BFB9 /* View+Extensions.swift in Sources */,
+				225222232B4A345300D8BFB9 /* StatsCardViewBundle.swift in Sources */,
+				225222342B4A3A9400D8BFB9 /* Date+Extensions.swift in Sources */,
+				225222352B4A3AD400D8BFB9 /* Category.swift in Sources */,
+				225222392B4A404200D8BFB9 /* TintColor.swift in Sources */,
+				225222382B4A3FC900D8BFB9 /* Transaction.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2252222A2B4A345400D8BFB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2252221D2B4A345300D8BFB9 /* StatsCardViewExtension */;
+			targetProxy = 225222292B4A345400D8BFB9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		224C90E02B293DAE001F4BE7 /* Debug */ = {
@@ -375,6 +516,7 @@
 		224C90E32B293DAE001F4BE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -405,6 +547,7 @@
 		224C90E42B293DAE001F4BE7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -432,6 +575,64 @@
 			};
 			name = Release;
 		};
+		2252222D2B4A345400D8BFB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = StatsCardViewExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SC6R6MV2N8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StatsCardView/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StatsCardView;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.beyond2021.Inpensa.StatsCardView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2252222E2B4A345400D8BFB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = StatsCardViewExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SC6R6MV2N8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StatsCardView/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StatsCardView;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.beyond2021.Inpensa.StatsCardView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -449,6 +650,15 @@
 			buildConfigurations = (
 				224C90E32B293DAE001F4BE7 /* Debug */,
 				224C90E42B293DAE001F4BE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2252222C2B4A345400D8BFB9 /* Build configuration list for PBXNativeTarget "StatsCardViewExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2252222D2B4A345400D8BFB9 /* Debug */,
+				2252222E2B4A345400D8BFB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

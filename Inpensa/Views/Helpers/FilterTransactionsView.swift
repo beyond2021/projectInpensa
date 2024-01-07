@@ -1,15 +1,9 @@
-//
-//  FilterTransactionsView.swift
-//  Inpensa
-//
-//  Created by KEEVIN MITCHELL on 1/1/24.
-//
-
 import SwiftUI
 import SwiftData
-// Custom View
-struct FilterTransactionsView<Content: View> : View {
+
+struct FilterTransactionsView<Content: View>: View {
     var content: ([Transaction]) -> Content
+    
     @Query(animation: .snappy) private var transactions: [Transaction]
     init(category: Category?, searchText: String, @ViewBuilder content: @escaping ([Transaction]) -> Content) {
         /// Custom Predicate
@@ -54,8 +48,9 @@ struct FilterTransactionsView<Content: View> : View {
         
         self.content = content
     }
+    
+    
     var body: some View {
         content(transactions)
     }
 }
-

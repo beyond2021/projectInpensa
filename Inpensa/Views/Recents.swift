@@ -35,12 +35,15 @@ struct Recents: View {
                             Button(action: {showFilterView = true}, label: {
                                 //From the date formatter
                                 Text("\(format(date:startDate, format:"MM dd YY")) to \(format(date:endDate, format:"MM dd yy"))")
-                                    .font(.caption2)
+                                    .font(.callout)
                                     .fontWeight(.semibold)
                                     .foregroundStyle(appTint
                                     )
+                                   
                             })
                             .hSpacing(.leading)
+                            
+                            
                             
                             FilterTransactionsView(startDate: startDate, endDate: endDate) { transactions in
                                 // Card View
