@@ -11,11 +11,11 @@ struct DateFilterView: View {
     @State var start: Date
     @State var end: Date
     // Action date in returns void
-    var onSubmit: (Date, Date) -> ()
+    var onSubmit: (Date, Date) -> Void
     /* whenevr the submit button is clicked this will
      This will return the updated start and end date
      This will close the popup*/
-    var onClose: () -> ()
+    var onClose: () -> Void
     var body: some View {
         VStack(spacing: 15, content: {
             DatePicker("Start Date", selection: $start, displayedComponents: [.date])
@@ -40,7 +40,6 @@ struct DateFilterView: View {
             .padding(.horizontal, 30)
         })
         .padding(15)
-        
+
     }
 }
-

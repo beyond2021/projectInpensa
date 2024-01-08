@@ -15,14 +15,12 @@ struct TintColor: Identifiable {
     var value: Color
 }
 
-
 // Available Colors Array
 var tints: [TintColor] = [
-    .init(color: "Red", value: .red),//.init creates a color
+    .init(color: "Red", value: .red), // .init creates a color
     .init(color: "Blue", value: .blue),
     .init(color: "Red", value: .red),
     .init(color: "Blue", value: .blue),
     .init(color: "Brown", value: .brown),
     .init(color: "Orange", value: .orange)
 ]
-

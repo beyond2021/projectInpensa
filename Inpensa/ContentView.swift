@@ -17,7 +17,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    //Intro Visibility Status stored in the Phone
+    // Intro Visibility Status stored in the Phone
     @AppStorage("IsFirstTime") private var isFirstTime: Bool = true
     // Active tab
     @State private var activeTab: Tab = .recents
@@ -39,18 +39,18 @@ struct ContentView: View {
                 Settings()
                     .tag(Tab.settings)
                     .tabItem { Tab.settings.tabContent }// from enum
-                
+
             }
             .tint(appTint)
-            //Intro Scene Presented on Sheet if Appstorage is set to true
+            // Intro Scene Presented on Sheet if Appstorage is set to true
             .sheet(isPresented: $isFirstTime, content: {
                 IntroScene()
                     .interactiveDismissDisabled()
-                
+
             })
-            
+
         }
-        
+
     }
 }
 

@@ -15,7 +15,7 @@ struct TransactionsView: View {
     @Environment(\.dismiss) private var dismiss
     // Updating Data
     var editTransaction: Transaction?
-    
+
     // View Input  Properties
     @State private var title: String = ""
     @State private var remarks: String = ""
@@ -32,7 +32,7 @@ struct TransactionsView: View {
                     .foregroundStyle(.gray)
                     .hSpacing(.leading)
                 // Preview Transaction Card View
-                TransactionCardView(transaction: .init(title: title.isEmpty ? "Title" : title, remarks: remarks.isEmpty ? "Remarks" : remarks, 
+                TransactionCardView(transaction: .init(title: title.isEmpty ? "Title" : title, remarks: remarks.isEmpty ? "Remarks" : remarks,
                                                        amount: amount,
                                                        dateAdded: dateAdded,
                                                        category: category,
@@ -56,7 +56,7 @@ struct TransactionsView: View {
                         .padding(.vertical, 12)
                         .background(.background, in: .rect(cornerRadius: 10))
                         .frame(maxWidth: 130)
-                        
+
                         // Custom Cheakbox
                         CategoryCheckBox()
                     }
@@ -74,7 +74,7 @@ struct TransactionsView: View {
                         .padding(.vertical, 12)
                         .background(.background, in: .rect(cornerRadius: 10))
                 })
-                
+
             }
             .padding(15)
         }
@@ -82,7 +82,7 @@ struct TransactionsView: View {
         .background(.gray.opacity(0.25))
         .toolbar(content: {
             ToolbarItem(placement: .topBarTrailing) {
-                Button("Save", action: saveData) 
+                Button("Save", action: saveData)
             }
         })
         .onAppear(perform: {
@@ -98,12 +98,12 @@ struct TransactionsView: View {
                 if let tint = editTransaction.tint {
                     self.tint = tint
                 }
-                
+
             }
         })
-        
+
     }
-    //MARK: Save Item to Swift Data from all inputs
+    // MARK: Save Item to Swift Data from all inputs
     func saveData() {
         // Saving Item to SwiftData - for Editing
         if editTransaction != nil {
@@ -116,16 +116,16 @@ struct TransactionsView: View {
             // Adding New Transaction
             let transaction = Transaction(title: title, remarks: remarks, amount: amount, dateAdded: dateAdded, category: category, tintColor: tint)
             context.insert(transaction)
-            
+
         }
-        
+
         // Dismissing the View
         dismiss()
         // Updating Widget
         WidgetCenter.shared.reloadAllTimelines()
     }
     @ViewBuilder
-    func CustomSection(_ title: String, _ hint: String,  value: Binding<String>) -> some View {
+    func CustomSection(_ title: String, _ hint: String, value: Binding<String>) -> some View {
         VStack(alignment: .leading, spacing: 10, content: {
             Text(title)
                 .font(.caption)
@@ -135,7 +135,7 @@ struct TransactionsView: View {
                 .padding(.horizontal, 15)
                 .padding(.vertical, 12)
                 .background(.background, in: .rect(cornerRadius: 10))
-            
+
         })
     }
     /// Custom CheckBox
@@ -148,15 +148,14 @@ struct TransactionsView: View {
                         Image(systemName: "circle")
                             .font(.title3)
                             .foregroundStyle(appTint)
-                        
+
                         if self.category == category {
                             Image(systemName: "circle.fill")
                                 .font(.caption)
                                 .foregroundStyle(appTint)
                         }
                     }
-                    
-                    
+
                     Text(category.rawValue)
                         .font(.caption)
                 }
@@ -178,9 +177,8 @@ struct TransactionsView: View {
         formatter.maximumFractionDigits = 2
         return formatter
     }
-    
-}
 
+}
 
 #Preview {
     NavigationStack {

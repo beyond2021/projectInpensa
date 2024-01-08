@@ -14,7 +14,7 @@ enum Tab: String {
     case search = "Search"
     case chart = "Chart"
     case settings = "Settings"
-    
+
     // Computed Property thus Var not func ViewBuilder
     @ViewBuilder
     var tabContent: some View {
@@ -32,7 +32,7 @@ enum Tab: String {
             Image(systemName: "gearshape")
             Text(self.rawValue)
         }
-        
+
     }
-    
+
 }

@@ -26,7 +26,7 @@ struct TransactionCardView: View {
                     Text(transaction.remarks)
                         .font(.caption)
                         .foregroundStyle(Color.primary.secondary)
-                    Text(format(date:transaction.dateAdded,
+                    Text(format(date: transaction.dateAdded,
                                 format: "MM dd yy"))
                     .font(.caption2)
                     if showCategory {
@@ -36,7 +36,7 @@ struct TransactionCardView: View {
                             .padding(.vertical, 2)
                             .foregroundStyle(.white)
                             .background(transaction.category == Category.income.rawValue ? Color.green.gradient : Color.red.gradient, in: .capsule)
-                        
+
                     }
                 })
                 .lineLimit(1)
@@ -47,18 +47,18 @@ struct TransactionCardView: View {
             .padding(.horizontal, 15)
             .padding(.vertical, 10)
             .background(.background, in: .rect(cornerRadius: 10))
-            
+
         } actions: {
             Action(tint: .red, icon: "trash") {
                 // DELETING DATA
                 context.delete(transaction)
             }
         }
-        
+
     }
 }
 
 #Preview {
-    //TransactionCardView(transaction: sampleTransactions[0])
+    // TransactionCardView(transaction: sampleTransactions[0])
     ContentView()
 }

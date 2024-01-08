@@ -17,20 +17,20 @@ struct Graphs: View {
         NavigationStack {
             ScrollView(.vertical) {
                 LazyVStack(spacing: 10) {
-                    ChartView()
+                    chartView()
                         .frame(height: 200)
                         .padding(10)
                         .padding(.top, 10)
                         .background(.background, in: .rect(cornerRadius: 10))
                         .opacity(transactions.isEmpty ? 0 : 1)
-                    
+
                     ForEach(chartGroups) { group in
                         VStack(alignment: .leading, spacing: 10) {
                             Text(format(date: group.date, format: "MMM yy"))
                                 .font(.caption)
                                 .foregroundStyle(.gray)
                                 .hSpacing(.leading)
-                            
+
                             NavigationLink {
                                 ListOfExpenses(month: group.date)
                             } label: {
@@ -55,9 +55,9 @@ struct Graphs: View {
             }
         }
     }
-    
+
     @ViewBuilder
-    func ChartView() -> some View {
+    func chartView() -> some View {
         /// Chart View
         Chart {
             ForEach(chartGroups) { group in
@@ -79,7 +79,7 @@ struct Graphs: View {
         .chartYAxis {
             AxisMarks(position: .leading) { value in
                 let doubleValue = value.as(Double.self) ?? 0
-                
+
                 AxisGridLine()
                 AxisTick()
                 AxisValueLabel {
@@ -90,33 +90,33 @@ struct Graphs: View {
         /// Foreground Colors
         .chartForegroundStyleScale(range: [Color.green.gradient, Color.red.gradient])
     }
-    
+
     func createChartGroup() {
         Task.detached(priority: .high) {
             let calendar = Calendar.current
-            
+
             let groupedByDate = Dictionary(grouping: transactions) { transaction in
                 let components = calendar.dateComponents([.month, .year], from: transaction.dateAdded)
-                
+
                 return components
             }
-            
+
             /// Sorting Groups By Date
             let sortedGroups = groupedByDate.sorted {
                 let date1 = calendar.date(from: $0.key) ?? .init()
                 let date2 = calendar.date(from: $1.key) ?? .init()
-                
+
                 return calendar.compare(date1, to: date2, toGranularity: .day) == .orderedDescending
             }
-            
+
             let chartGroups = sortedGroups.compactMap { dict -> ChartGroup? in
                 let date = calendar.date(from: dict.key) ?? .init()
                 let income = dict.value.filter({ $0.category == Category.income.rawValue })
                 let expense = dict.value.filter({ $0.category == Category.expense.rawValue })
-                
+
                 let incomeTotalValue = total(income, category: .income)
                 let expenseTotalValue = total(expense, category: .expense)
-                
+
                 return .init(
                     date: date,
                     categories: [
@@ -127,18 +127,18 @@ struct Graphs: View {
                     totalExpense: expenseTotalValue
                 )
             }
-            
+
             /// UI Must be updated on Main Thread
             await MainActor.run {
                 self.chartGroups = chartGroups
             }
         }
     }
-    
+
     func axisLabel(_ value: Double) -> String {
         let intValue = Int(value)
         let kValue = intValue / 1000
-        
+
         return intValue < 1000 ? "\(intValue)" : "\(kValue)K"
     }
 }
@@ -166,7 +166,7 @@ struct ListOfExpenses: View {
                         .foregroundStyle(.gray)
                         .hSpacing(.leading)
                 }
-                
+
                 Section {
                     FilterTransactionsView(startDate: month.startOfMonth, endDate: month.endtOfMonth, category: .expense) { transactions in
                         ForEach(transactions) { transaction in

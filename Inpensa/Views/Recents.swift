@@ -20,9 +20,8 @@ struct Recents: View {
     @State private var showFilterView: Bool = false
     // For Animation
     @Namespace private var animation
-    
-    
-    //MARK: Main View
+
+    // MARK: Main View
     var body: some View {
         GeometryReader {
             // For animation Purpose 
@@ -33,18 +32,16 @@ struct Recents: View {
                         Section {
                             // Date filled Button
                             Button(action: {showFilterView = true}, label: {
-                                //From the date formatter
-                                Text("\(format(date:startDate, format:"MM dd YY")) to \(format(date:endDate, format:"MM dd yy"))")
+                                // From the date formatter
+                                Text("\(format(date: startDate, format: "MM dd YY")) to \(format(date: endDate, format: "MM dd yy"))")
                                     .font(.callout)
                                     .fontWeight(.semibold)
                                     .foregroundStyle(appTint
                                     )
-                                
+
                             })
                             .hSpacing(.leading)
-                            
-                            
-                            
+
                             FilterTransactionsView(startDate: startDate, endDate: endDate) { transactions in
                                 // Card View
                                 CardView(income: total(transactions, category: .income), expense: total(transactions, category: .expense))
@@ -58,17 +55,15 @@ struct Recents: View {
                                         TransactionCardView(transaction: transaction)
                                     }
                                     .buttonStyle(.plain)
-                                    
+
                                 }
-                                
+
                             }
-                            
-                            
-                            
+
                         } header: {
                             HeaderView(size)
                         }
-                        
+
                     })
                     .padding(15) // Header view BG is clipped
                 }
@@ -93,10 +88,10 @@ struct Recents: View {
                     }
                     .transition(.move(edge: Edge.leading))
                 }
-                
+
             }
             .animation(.snappy, value: showFilterView)
-            
+
         }
     }
     // MARK: Header View
@@ -121,7 +116,7 @@ struct Recents: View {
             Spacer(minLength: 0)
             NavigationLink {
                 TransactionsView()
-                
+
             } label: {
                 // Red Plus Nav Link
                 Image(systemName: "plus")
@@ -145,11 +140,11 @@ struct Recents: View {
                 content
                     .opacity(headerBGOpacity(geometryProxy))
             }
-            
+
             .padding(.horizontal, -15)
-            .padding(.top, -(safeArea.top + 15)) //Safe Area
+            .padding(.top, -(safeArea.top + 15)) // Safe Area
         }
-        
+
     }
     // Segmented Control
     @ViewBuilder
@@ -165,7 +160,7 @@ struct Recents: View {
                                 .fill(.background)
                                 .matchedGeometryEffect(id: "ACTIVETAB", in: animation)
                         }
-                        
+
                     }
                     .contentShape(.capsule)
                     .onTapGesture {
@@ -173,19 +168,18 @@ struct Recents: View {
                             selectedCategory = category
                         }
                     }
-                
-                
+
             }
         }
         .background(.gray.opacity(0.15), in: .capsule)
         .padding(.top, 5)
-        
+
     }
     // Date Filter View
     // MARK: Header Opacity
     func headerBGOpacity(_ proxy: GeometryProxy) -> CGFloat {
         let minY = proxy.frame(in: .scrollView).minY + safeArea.top
-        
+
         print(minY)
         return minY > 0 ? 0 : (-minY / 15)
     }
@@ -196,7 +190,7 @@ struct Recents: View {
         let progress = minY / screenHeight
         let scale = min(max(progress, 0), 1) * 0.6
         return 1 + scale
-        
+
     }
 }
 

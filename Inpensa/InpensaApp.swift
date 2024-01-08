@@ -15,7 +15,7 @@ struct InpensaApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .onChange(of: scene, { oldValue, newValue in
+                .onChange(of: scene, { _, newValue in
                     if newValue == .background {
                         WidgetCenter.shared.reloadAllTimelines()
                     }

@@ -8,16 +8,16 @@
 import SwiftUI
 
 struct IntroScene: View {
-    //Visibility States
+    // Visibility States
     @AppStorage("IsFirstTime") private var isFirstTime: Bool = true // Set To True :1 in the Phone
     var body: some View {
         VStack( spacing: 15, content: {
             Text("What's New in\nInpensa")
                 .font(.largeTitle.bold())
                 .multilineTextAlignment(.center)
-                .padding(.top,65)
+                .padding(.top, 65)
                 .padding(.bottom, 35)
-            
+
             // Points View
             VStack(alignment: .leading, spacing: 25, content: {
                 PointsView(symbol: "dollarsign", title: "Transactions", subTitle: "Keep track mof your earnings and expenses.")
@@ -42,8 +42,7 @@ struct IntroScene: View {
         })
         .padding(15)
     }
-    //MARK: Points View
-    /* You can define a function with @ViewBuilder as its attribute to create a custom view builder. This allows you to pass in parameters and use them to construct SwiftUI views within the function. */
+    // MARK: Points View
     @ViewBuilder
     func PointsView(symbol: String, title: String, subTitle: String) -> some View {
         HStack(spacing: 20, content: {
@@ -58,7 +57,7 @@ struct IntroScene: View {
                     .foregroundStyle(.gray)
             })
         })
-        
+
     }
 }
 

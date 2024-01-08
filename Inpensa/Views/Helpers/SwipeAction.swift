@@ -40,7 +40,7 @@ struct SwipeAction<Content: View>: View {
                         .overlay {
                             GeometryReader {
                                 let minX = $0.frame(in: .scrollView(axis: .horizontal)).minX
-                                
+
                                 Color.clear
                                     .preference(key: OffsetKey.self, value: minX)
                                     .onPreferenceChange(OffsetKey.self) {
@@ -48,7 +48,7 @@ struct SwipeAction<Content: View>: View {
                                     }
                             }
                         }
-                    
+
                     ActionButtons {
                         withAnimation(.snappy) {
                             scrollProxy.scrollTo(viewID, anchor: direction == .trailing ? .topLeading : .topTrailing)
@@ -77,10 +77,10 @@ struct SwipeAction<Content: View>: View {
         .allowsHitTesting(isEnabled)
         .transition(CustomTransition())
     }
-    
+
     /// Action Buttons
     @ViewBuilder
-    func ActionButtons(resetPosition: @escaping () -> ()) -> some View {
+    func ActionButtons(resetPosition: @escaping () -> Void) -> some View {
         /// Each Button Will Have 100 Width
         Rectangle()
             .fill(.clear)
@@ -113,13 +113,13 @@ struct SwipeAction<Content: View>: View {
                 }
             }
     }
-    
+
     func scrollOffset(_ proxy: GeometryProxy) -> CGFloat {
         let minX = proxy.frame(in: .scrollView(axis: .horizontal)).minX
-        
+
         return (minX > 0 ? -minX : 0)
     }
-    
+
     var filteredActions: [Action] {
         return actions.filter({ $0.isEnabled })
     }
@@ -140,7 +140,7 @@ struct CustomTransition: Transition {
             .mask {
                 GeometryReader {
                     let size = $0.size
-                    
+
                     Rectangle()
                         .offset(y: phase == .identity ? 0 : -size.height)
                 }
@@ -153,7 +153,7 @@ struct CustomTransition: Transition {
 enum SwipeDirection {
     case leading
     case trailing
-    
+
     var alignment: Alignment {
         switch self {
         case .leading:
@@ -172,7 +172,7 @@ struct Action: Identifiable {
     var iconFont: Font = .title
     var iconTint: Color = .white
     var isEnabled: Bool = true
-    var action: () -> ()
+    var action: () -> Void
 }
 
 @resultBuilder

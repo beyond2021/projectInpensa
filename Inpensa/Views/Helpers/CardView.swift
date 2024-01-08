@@ -49,9 +49,9 @@ struct CardView: View {
                             if category == .income {
                                 Spacer(minLength: 10)
                             }
-                            
+
                         }
-                        
+
                     }
                 })
             })
@@ -64,7 +64,7 @@ struct CardView: View {
 #Preview {
     ScrollView {
         CardView(income: 4590, expense: 2389)
-        
+
     }
-    
+
 }

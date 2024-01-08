@@ -8,12 +8,11 @@
 import SwiftUI
 import Combine
 
-
 struct Search: View {
     // View Properties
     @State private var searchText: String = ""
     @State private var filteredText: String = ""
-    @State private var selectedCategory: Category? = nil
+    @State private var selectedCategory: Category?
     // Combine
     let searchPublisher = PassthroughSubject<String, Never>()
     var body: some View {
@@ -28,18 +27,18 @@ struct Search: View {
                                 TransactionCardView(transaction: transaction, showCategory: true)
                             }
                             .buttonStyle(.plain)
-                            
+
                         }
                     }
                 }
                 .padding(15)
-                
+
             }
             .overlay(content: {
                 ContentUnavailableView("Search Transactions", systemImage: "magnifyingglass")
                     .opacity(filteredText.isEmpty ? 1 : 0)
             })
-            .onChange(of: searchText, { oldValue, newValue in
+            .onChange(of: searchText, { _, newValue in
                 // print(newValue)
                 // Immediately know when search text is empty
                 if newValue.isEmpty {
@@ -63,7 +62,7 @@ struct Search: View {
             }
         }
     }
-    //MARK: Toolbar Content
+    // MARK: Toolbar Content
     @ViewBuilder
     func ToolBarContent() -> some View {
         Menu {
@@ -77,11 +76,7 @@ struct Search: View {
                     Image(systemName: "checkmark") // checkmark when category is swt
                 }
             }
-            
-            
-            
-            
-            
+
             ForEach(Category.allCases, id: \.rawValue) { category in
                 Button {
                     selectedCategory = category // button sets the category
@@ -93,13 +88,12 @@ struct Search: View {
                         Image(systemName: "checkmark") // checkmark when category is swt
                     }
                 }
-                
-                
+
             }
         } label: {
             Image(systemName: "slider.vertical.3")
         }
-        
+
     }
 }
 

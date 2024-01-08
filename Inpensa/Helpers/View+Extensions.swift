@@ -23,24 +23,24 @@ extension View {
     var safeArea: UIEdgeInsets {
         if let windowScene = (UIApplication.shared.connectedScenes.first as? UIWindowScene) {
             return windowScene.keyWindow?.safeAreaInsets ?? .zero
-            
+
         }
         return .zero
     }
-    //MARK: Date
+    // MARK: Date
     func format(date: Date, format: String) -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = format
         return formatter.string(from: date)
-        
+
     }
-    //MARK: Card View
+    // MARK: Card View
     func currencyString(_ value: Double, allowedDigits: Int = 2) -> String {
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
         formatter.maximumFractionDigits = allowedDigits
         return formatter.string(from: .init(value: value)) ?? ""
-        
+
     }
     var currencySymbol: String {
         let local = Locale.current
