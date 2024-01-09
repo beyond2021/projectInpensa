@@ -25,7 +25,7 @@ struct ContentView: View {
     @AppStorage("isAppLockEnabled") private var isAppLockEnabled: Bool = false
     @AppStorage("lockWhenAppGoesTobackground") private var lockWhenAppGoesTobackground: Bool = false
     var body: some View {
-        LockView(lockType: .both, lockPin: "9301", isEnabled: isAppLockEnabled, lockWhenAppGoesToBG: lockWhenAppGoesTobackground) {
+        LockView(lockType: .biometric, lockPin: "9301", isEnabled: isAppLockEnabled, lockWhenAppGoesToBG: lockWhenAppGoesTobackground) {
             TabView(selection: $activeTab) {
                 Recents() // page view
                     .tag(Tab.recents)
