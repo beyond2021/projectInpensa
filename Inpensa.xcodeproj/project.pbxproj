@@ -17,12 +17,10 @@
 		224F9DD72B4B9D88000E2D0C /* InpensaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224F9DD62B4B9D88000E2D0C /* InpensaTests.swift */; };
 		224F9DDE2B4BACFA000E2D0C /* ModelMockContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224F9DDD2B4BACFA000E2D0C /* ModelMockContainer.swift */; };
 		224F9DDF2B4BAEF3000E2D0C /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B916B82B2F15F700AE8208 /* Transaction.swift */; };
-		225078A02B4A7F17008752B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2250789F2B4A7F17008752B0 /* Assets.xcassets */; };
 		225078A32B4B40A7008752B0 /* StatsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225222242B4A345300D8BFB9 /* StatsCardView.swift */; };
 		2252221F2B4A345300D8BFB9 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225D0B122B491D6600478FFD /* WidgetKit.framework */; };
 		225222202B4A345300D8BFB9 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225D0B142B491D6600478FFD /* SwiftUI.framework */; };
 		225222232B4A345300D8BFB9 /* StatsCardViewBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225222222B4A345300D8BFB9 /* StatsCardViewBundle.swift */; };
-		225222272B4A345400D8BFB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 225222262B4A345400D8BFB9 /* Assets.xcassets */; };
 		2252222B2B4A345400D8BFB9 /* StatsCardViewExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2252221E2B4A345300D8BFB9 /* StatsCardViewExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		225222312B4A3A0300D8BFB9 /* FilterTransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225D0B2B2B492D8F00478FFD /* FilterTransactionsView.swift */; };
 		225222322B4A3A4A00D8BFB9 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA909A2B37337B00358135 /* CardView.swift */; };
@@ -32,6 +30,8 @@
 		225222372B4A3B7100D8BFB9 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C90EA2B294CF2001F4BE7 /* Helpers.swift */; };
 		225222382B4A3FC900D8BFB9 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B916B82B2F15F700AE8208 /* Transaction.swift */; };
 		225222392B4A404200D8BFB9 /* TintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B916BA2B2F188700AE8208 /* TintColor.swift */; };
+		2256BE842B4D734D00DC834A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2256BE832B4D734D00DC834A /* Assets.xcassets */; };
+		2256BE8E2B4D798D00DC834A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2256BE8D2B4D798D00DC834A /* Assets.xcassets */; };
 		225D0B2C2B492D8F00478FFD /* FilterTransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225D0B2B2B492D8F00478FFD /* FilterTransactionsView.swift */; };
 		22B916B72B2F153D00AE8208 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B916B62B2F153D00AE8208 /* Category.swift */; };
 		22B916B92B2F15F700AE8208 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B916B82B2F15F700AE8208 /* Transaction.swift */; };
@@ -93,14 +93,14 @@
 		224F9DD42B4B9D88000E2D0C /* InpensaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InpensaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		224F9DD62B4B9D88000E2D0C /* InpensaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InpensaTests.swift; sourceTree = "<group>"; };
 		224F9DDD2B4BACFA000E2D0C /* ModelMockContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelMockContainer.swift; sourceTree = "<group>"; };
-		2250789F2B4A7F17008752B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/AppIcons/Assets.xcassets; sourceTree = "<group>"; };
 		225078A12B4B1E5C008752B0 /* Inpensa.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Inpensa.entitlements; sourceTree = "<group>"; };
 		225078A22B4B2B6D008752B0 /* StatsCardViewExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StatsCardViewExtension.entitlements; sourceTree = "<group>"; };
 		2252221E2B4A345300D8BFB9 /* StatsCardViewExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StatsCardViewExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		225222222B4A345300D8BFB9 /* StatsCardViewBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsCardViewBundle.swift; sourceTree = "<group>"; };
 		225222242B4A345300D8BFB9 /* StatsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsCardView.swift; sourceTree = "<group>"; };
-		225222262B4A345400D8BFB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		225222282B4A345400D8BFB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2256BE832B4D734D00DC834A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2256BE8D2B4D798D00DC834A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../Downloads/Expense Tracker/Expense Tracker/Assets.xcassets"; sourceTree = "<group>"; };
 		225D0B122B491D6600478FFD /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		225D0B142B491D6600478FFD /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		225D0B2B2B492D8F00478FFD /* FilterTransactionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterTransactionsView.swift; sourceTree = "<group>"; };
@@ -179,7 +179,7 @@
 				224C90E52B2943A0001F4BE7 /* Views */,
 				224C90D72B293DAC001F4BE7 /* InpensaApp.swift */,
 				224C90D92B293DAC001F4BE7 /* ContentView.swift */,
-				2250789F2B4A7F17008752B0 /* Assets.xcassets */,
+				2256BE8D2B4D798D00DC834A /* Assets.xcassets */,
 				224C90DD2B293DAE001F4BE7 /* Preview Content */,
 			);
 			path = Inpensa;
@@ -188,6 +188,7 @@
 		224C90DD2B293DAE001F4BE7 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				2256BE832B4D734D00DC834A /* Assets.xcassets */,
 				224C90DE2B293DAE001F4BE7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -243,7 +244,6 @@
 			children = (
 				225222222B4A345300D8BFB9 /* StatsCardViewBundle.swift */,
 				225222242B4A345300D8BFB9 /* StatsCardView.swift */,
-				225222262B4A345400D8BFB9 /* Assets.xcassets */,
 				225222282B4A345400D8BFB9 /* Info.plist */,
 			);
 			path = StatsCardView;
@@ -378,8 +378,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2256BE842B4D734D00DC834A /* Assets.xcassets in Resources */,
+				2256BE8E2B4D798D00DC834A /* Assets.xcassets in Resources */,
 				224C90DF2B293DAE001F4BE7 /* Preview Assets.xcassets in Resources */,
-				225078A02B4A7F17008752B0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,7 +395,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				225222272B4A345400D8BFB9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

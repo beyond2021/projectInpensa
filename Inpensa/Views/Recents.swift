@@ -89,12 +89,12 @@ struct Recents: View {
     func HeaderView(_ size: CGSize) -> some View {
         HStack(spacing: 10) {
             VStack(alignment: .leading, spacing: 5, content: {
-                Text("Inpensa!!")
+                Text("Inpensa!")
                     .font(.title.bold())
                 
                 if !userName.isEmpty {
                     Text(userName)
-                        .font(.caption.bold())
+                        .font(.callout)
                         .foregroundStyle(.gray)
                 }
             })
@@ -122,6 +122,7 @@ struct Recents: View {
             VStack(spacing: 0) {
                 Rectangle()
                     .fill(.ultraThinMaterial)
+                    
                 
                 Divider()
             }
