@@ -35,7 +35,6 @@
 		2256BE842B4D734D00DC834A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2256BE832B4D734D00DC834A /* Assets.xcassets */; };
 		2256BE8E2B4D798D00DC834A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2256BE8D2B4D798D00DC834A /* Assets.xcassets */; };
 		225D0B2C2B492D8F00478FFD /* FilterTransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225D0B2B2B492D8F00478FFD /* FilterTransactionsView.swift */; };
-		22661E2F2B6E835600614705 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22661E2E2B6E835600614705 /* Assets.xcassets */; };
 		2268622B2B53082800140536 /* InpensaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2268622A2B53082800140536 /* InpensaUITests.swift */; };
 		2268622D2B53082800140536 /* InpensaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2268622C2B53082800140536 /* InpensaUITestsLaunchTests.swift */; };
 		22B916B72B2F153D00AE8208 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B916B62B2F153D00AE8208 /* Category.swift */; };
@@ -121,7 +120,6 @@
 		225D0B122B491D6600478FFD /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		225D0B142B491D6600478FFD /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		225D0B2B2B492D8F00478FFD /* FilterTransactionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterTransactionsView.swift; sourceTree = "<group>"; };
-		22661E2E2B6E835600614705 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/AppIcons/Assets.xcassets; sourceTree = "<group>"; };
 		226862282B53082800140536 /* InpensaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InpensaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2268622A2B53082800140536 /* InpensaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InpensaUITests.swift; sourceTree = "<group>"; };
 		2268622C2B53082800140536 /* InpensaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InpensaUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -215,7 +213,6 @@
 				224C90D92B293DAC001F4BE7 /* ContentView.swift */,
 				2256BE8D2B4D798D00DC834A /* Assets.xcassets */,
 				22DE18452B69976500239FE6 /* Assets.xcassets */,
-				22661E2E2B6E835600614705 /* Assets.xcassets */,
 				224C90DD2B293DAE001F4BE7 /* Preview Content */,
 			);
 			path = Inpensa;
@@ -470,7 +467,6 @@
 				2256BE8E2B4D798D00DC834A /* Assets.xcassets in Resources */,
 				22DE18462B69976500239FE6 /* Assets.xcassets in Resources */,
 				224C90DF2B293DAE001F4BE7 /* Preview Assets.xcassets in Resources */,
-				22661E2F2B6E835600614705 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -716,7 +712,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Inpensa/Inpensa.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Inpensa/Preview Content\"";
 				DEVELOPMENT_TEAM = SC6R6MV2N8;
 				ENABLE_PREVIEWS = YES;
@@ -748,7 +744,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Inpensa/Inpensa.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Inpensa/Preview Content\"";
 				DEVELOPMENT_TEAM = SC6R6MV2N8;
 				ENABLE_PREVIEWS = YES;
@@ -817,7 +813,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = StatsCardViewExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = SC6R6MV2N8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StatsCardView/Info.plist;
@@ -829,7 +825,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.beyond2021.Inpensa.StatsCardView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -846,7 +842,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = StatsCardViewExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = SC6R6MV2N8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StatsCardView/Info.plist;
@@ -858,7 +854,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.beyond2021.Inpensa.StatsCardView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
