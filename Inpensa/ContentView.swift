@@ -25,7 +25,7 @@ struct ContentView: View {
     @AppStorage("isAppLockEnabled") private var isAppLockEnabled: Bool = false
     @AppStorage("lockWhenAppGoesTobackground") private var lockWhenAppGoesTobackground: Bool = false
     var body: some View {
-        LockView(lockType: .both, lockPin: "9301", isEnabled: isAppLockEnabled, lockWhenAppGoesToBG: lockWhenAppGoesTobackground) {
+        LockView(lockType: .biometric, lockPin: "", isEnabled: isAppLockEnabled, lockWhenAppGoesToBG: lockWhenAppGoesTobackground) {
             TabView(selection: $activeTab) {
                 Recents() // page view
                     .tag(Tab.recents)
@@ -39,7 +39,7 @@ struct ContentView: View {
                 Settings()
                     .tag(Tab.settings)
                     .tabItem { Tab.settings.tabContent }// from enum
-
+               
             }
             .tint(appTint)
             // Intro Scene Presented on Sheet if Appstorage is set to true
@@ -52,6 +52,7 @@ struct ContentView: View {
         }
 
     }
+  
 }
 
 #Preview {

@@ -1,28 +1,23 @@
 //
-//  CardView.swift
+//  BlueCardView.swift
 //  Inpensa
 //
-//  Created by KEEVIN MITCHELL on 12/23/23.
+//  Created by KEEVIN MITCHELL on 1/18/24.
 //
 
 import SwiftUI
-
-struct CardView: View {
+struct BlueCardView: View {
     var income: Double
     var expense: Double
     var body: some View {
         ZStack {
-            // Color("InpensaPink")
             RoundedRectangle(cornerRadius: 15)
-                .fill(Color.appBViolet)
-                
-               
+                .fill(.background)
             VStack(spacing: 0, content: {
                 HStack( spacing: 12, content: {
                     Text("\(currencyString(income - expense))")
                         .font(.title.bold())
-                        .foregroundStyle(.white)
-//                        .foregroundStyle(Color.primary) // foregroungstyle primary means the apps accent color,  to get the system's primary color we need to use color,primary.
+                        .foregroundStyle(Color.primary) // foregroungstyle primary means the apps accent color,  to get the system's primary color we need to use color,primary.
                     Image(systemName: expense > income ? "chart.line.downtrend.xyaxis" : "chart.line.uptrend.xyaxis")
                         .font(.title3)
                         .foregroundStyle(expense > income ? .red : .green)
@@ -35,8 +30,7 @@ struct CardView: View {
                         HStack(spacing: 10) {
                             Image(systemName: symbolImage)
                                 .font(.callout.bold())
-                               // .foregroundStyle(tint)
-                                .foregroundStyle(.white)
+                                .foregroundStyle(tint)
                                 .frame(width: 35, height: 35)
                                 .background {
                                     Circle()
@@ -49,8 +43,7 @@ struct CardView: View {
                                 Text(currencyString(category == .income ? income: expense, allowedDigits: 0))
                                     .font(.callout)
                                     .fontWeight(.semibold)
-//                                    .foregroundStyle(.primary)
-                                    .foregroundStyle(.white)
+                                    .foregroundStyle(.primary)
                             }
                             if category == .income {
                                 Spacer(minLength: 10)
@@ -69,8 +62,10 @@ struct CardView: View {
 
 #Preview {
     ScrollView {
-        CardView(income: 4590, expense: 2389)
+       // CardView(income: 4590, expense: 2389)
+        BlueCardView(income: 4590, expense: 2389)
 
     }
 
 }
+

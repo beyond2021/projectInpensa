@@ -30,12 +30,14 @@ class Transaction {
     /// Extracting Color Value from tintColor String
     @Transient
     var color: Color {
-        return tints.first(where: { $0.color == tintColor })?.value ?? appTint
+//        return tints.first(where: { $0.color == tintColor })?.value ?? appTint
+        return appTints.first(where: { $0.color == tintColor })?.value ?? appTint
     }
 
     @Transient
     var tint: TintColor? {
-        return tints.first(where: { $0.color == tintColor })
+//        return tints.first(where: { $0.color == tintColor })
+        return appTints.first(where: { $0.color == tintColor })
     }
 
     @Transient

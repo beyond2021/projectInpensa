@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		222285202B53132B00EC378F /* TintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B916BA2B2F188700AE8208 /* TintColor.swift */; };
+		222967F72B59E4D000A3FB3E /* BlueCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222967F62B59E4D000A3FB3E /* BlueCardView.swift */; };
 		2247FEB42B4500A000C8DE1D /* ChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2247FEB32B4500A000C8DE1D /* ChartModel.swift */; };
 		224C90D82B293DAC001F4BE7 /* InpensaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C90D72B293DAC001F4BE7 /* InpensaApp.swift */; };
 		224C90DA2B293DAC001F4BE7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C90D92B293DAC001F4BE7 /* ContentView.swift */; };
@@ -33,6 +35,9 @@
 		2256BE842B4D734D00DC834A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2256BE832B4D734D00DC834A /* Assets.xcassets */; };
 		2256BE8E2B4D798D00DC834A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2256BE8D2B4D798D00DC834A /* Assets.xcassets */; };
 		225D0B2C2B492D8F00478FFD /* FilterTransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225D0B2B2B492D8F00478FFD /* FilterTransactionsView.swift */; };
+		22661E2F2B6E835600614705 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22661E2E2B6E835600614705 /* Assets.xcassets */; };
+		2268622B2B53082800140536 /* InpensaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2268622A2B53082800140536 /* InpensaUITests.swift */; };
+		2268622D2B53082800140536 /* InpensaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2268622C2B53082800140536 /* InpensaUITestsLaunchTests.swift */; };
 		22B916B72B2F153D00AE8208 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B916B62B2F153D00AE8208 /* Category.swift */; };
 		22B916B92B2F15F700AE8208 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B916B82B2F15F700AE8208 /* Transaction.swift */; };
 		22B916BB2B2F188700AE8208 /* TintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B916BA2B2F188700AE8208 /* TintColor.swift */; };
@@ -40,6 +45,10 @@
 		22B916BF2B31C09E00AE8208 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B916BE2B31C09E00AE8208 /* Search.swift */; };
 		22B916C12B31C0BF00AE8208 /* Graphs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B916C02B31C0BF00AE8208 /* Graphs.swift */; };
 		22B916C32B31C1AF00AE8208 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B916C22B31C1AF00AE8208 /* Settings.swift */; };
+		22DE18412B698F1B00239FE6 /* Recents2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DE18402B698F1B00239FE6 /* Recents2.swift */; };
+		22DE18432B69935100239FE6 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DE18422B69935100239FE6 /* Test.swift */; };
+		22DE18462B69976500239FE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22DE18452B69976500239FE6 /* Assets.xcassets */; };
+		22DE18492B6997EF00239FE6 /* ScrollDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DE18482B6997EF00239FE6 /* ScrollDetector.swift */; };
 		22FA90962B32225200358135 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA90952B32225200358135 /* View+Extensions.swift */; };
 		22FA90982B37268200358135 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA90972B37268200358135 /* Date+Extensions.swift */; };
 		22FA909B2B37337B00358135 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA909A2B37337B00358135 /* CardView.swift */; };
@@ -65,6 +74,13 @@
 			remoteGlobalIDString = 2252221D2B4A345300D8BFB9;
 			remoteInfo = StatsCardViewExtension;
 		};
+		2268622E2B53082800140536 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 224C90CC2B293DAC001F4BE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 224C90D32B293DAC001F4BE7;
+			remoteInfo = Inpensa;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -82,6 +98,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		222967F62B59E4D000A3FB3E /* BlueCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueCardView.swift; sourceTree = "<group>"; };
 		2247FEB32B4500A000C8DE1D /* ChartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartModel.swift; sourceTree = "<group>"; };
 		224C90D42B293DAC001F4BE7 /* Inpensa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inpensa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		224C90D72B293DAC001F4BE7 /* InpensaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InpensaApp.swift; sourceTree = "<group>"; };
@@ -104,6 +121,10 @@
 		225D0B122B491D6600478FFD /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		225D0B142B491D6600478FFD /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		225D0B2B2B492D8F00478FFD /* FilterTransactionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterTransactionsView.swift; sourceTree = "<group>"; };
+		22661E2E2B6E835600614705 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/AppIcons/Assets.xcassets; sourceTree = "<group>"; };
+		226862282B53082800140536 /* InpensaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InpensaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2268622A2B53082800140536 /* InpensaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InpensaUITests.swift; sourceTree = "<group>"; };
+		2268622C2B53082800140536 /* InpensaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InpensaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		22B916B62B2F153D00AE8208 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		22B916B82B2F15F700AE8208 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		22B916BA2B2F188700AE8208 /* TintColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TintColor.swift; sourceTree = "<group>"; };
@@ -111,6 +132,10 @@
 		22B916BE2B31C09E00AE8208 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		22B916C02B31C0BF00AE8208 /* Graphs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graphs.swift; sourceTree = "<group>"; };
 		22B916C22B31C1AF00AE8208 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		22DE18402B698F1B00239FE6 /* Recents2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recents2.swift; sourceTree = "<group>"; };
+		22DE18422B69935100239FE6 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		22DE18452B69976500239FE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/ResizableHeader/ResizableHeader/Assets.xcassets; sourceTree = "<group>"; };
+		22DE18482B6997EF00239FE6 /* ScrollDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollDetector.swift; sourceTree = "<group>"; };
 		22FA90952B32225200358135 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		22FA90972B37268200358135 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		22FA909A2B37337B00358135 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -145,6 +170,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		226862252B53082800140536 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -155,6 +187,7 @@
 				224C90D62B293DAC001F4BE7 /* Inpensa */,
 				225222212B4A345300D8BFB9 /* StatsCardView */,
 				224F9DD52B4B9D88000E2D0C /* InpensaTests */,
+				226862292B53082800140536 /* InpensaUITests */,
 				225D0B112B491D6600478FFD /* Frameworks */,
 				224C90D52B293DAC001F4BE7 /* Products */,
 			);
@@ -166,6 +199,7 @@
 				224C90D42B293DAC001F4BE7 /* Inpensa.app */,
 				2252221E2B4A345300D8BFB9 /* StatsCardViewExtension.appex */,
 				224F9DD42B4B9D88000E2D0C /* InpensaTests.xctest */,
+				226862282B53082800140536 /* InpensaUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -180,6 +214,8 @@
 				224C90D72B293DAC001F4BE7 /* InpensaApp.swift */,
 				224C90D92B293DAC001F4BE7 /* ContentView.swift */,
 				2256BE8D2B4D798D00DC834A /* Assets.xcassets */,
+				22DE18452B69976500239FE6 /* Assets.xcassets */,
+				22661E2E2B6E835600614705 /* Assets.xcassets */,
 				224C90DD2B293DAE001F4BE7 /* Preview Content */,
 			);
 			path = Inpensa;
@@ -197,6 +233,7 @@
 		224C90E52B2943A0001F4BE7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				22DE18442B6996E700239FE6 /* IHeader */,
 				22FA90992B37335F00358135 /* Helpers */,
 				224C90E72B294422001F4BE7 /* IntroScene.swift */,
 				22B916BC2B31C07A00AE8208 /* Recents.swift */,
@@ -204,6 +241,7 @@
 				22B916C02B31C0BF00AE8208 /* Graphs.swift */,
 				22B916C22B31C1AF00AE8208 /* Settings.swift */,
 				22FA90C12B3E3B1C00358135 /* TransactionsView.swift */,
+				22DE18422B69935100239FE6 /* Test.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -258,6 +296,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		226862292B53082800140536 /* InpensaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2268622A2B53082800140536 /* InpensaUITests.swift */,
+				2268622C2B53082800140536 /* InpensaUITestsLaunchTests.swift */,
+			);
+			path = InpensaUITests;
+			sourceTree = "<group>";
+		};
+		22DE18442B6996E700239FE6 /* IHeader */ = {
+			isa = PBXGroup;
+			children = (
+				22DE18472B6997B100239FE6 /* Helper */,
+			);
+			path = IHeader;
+			sourceTree = "<group>";
+		};
+		22DE18472B6997B100239FE6 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				22DE18482B6997EF00239FE6 /* ScrollDetector.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		22FA90992B37335F00358135 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -267,6 +330,8 @@
 				22FA909A2B37337B00358135 /* CardView.swift */,
 				22FA909C2B37589A00358135 /* TransactionCardView.swift */,
 				22FA90A02B3A121B00358135 /* DateFilterView.swift */,
+				222967F62B59E4D000A3FB3E /* BlueCardView.swift */,
+				22DE18402B698F1B00239FE6 /* Recents2.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -328,6 +393,24 @@
 			productReference = 2252221E2B4A345300D8BFB9 /* StatsCardViewExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		226862272B53082800140536 /* InpensaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 226862322B53082800140536 /* Build configuration list for PBXNativeTarget "InpensaUITests" */;
+			buildPhases = (
+				226862242B53082800140536 /* Sources */,
+				226862252B53082800140536 /* Frameworks */,
+				226862262B53082800140536 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2268622F2B53082800140536 /* PBXTargetDependency */,
+			);
+			name = InpensaUITests;
+			productName = InpensaUITests;
+			productReference = 226862282B53082800140536 /* InpensaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -347,6 +430,10 @@
 					};
 					2252221D2B4A345300D8BFB9 = {
 						CreatedOnToolsVersion = 15.2;
+					};
+					226862272B53082800140536 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 224C90D32B293DAC001F4BE7;
 					};
 				};
 			};
@@ -369,6 +456,7 @@
 				224C90D32B293DAC001F4BE7 /* Inpensa */,
 				2252221D2B4A345300D8BFB9 /* StatsCardViewExtension */,
 				224F9DD32B4B9D88000E2D0C /* InpensaTests */,
+				226862272B53082800140536 /* InpensaUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -380,7 +468,9 @@
 			files = (
 				2256BE842B4D734D00DC834A /* Assets.xcassets in Resources */,
 				2256BE8E2B4D798D00DC834A /* Assets.xcassets in Resources */,
+				22DE18462B69976500239FE6 /* Assets.xcassets in Resources */,
 				224C90DF2B293DAE001F4BE7 /* Preview Assets.xcassets in Resources */,
+				22661E2F2B6E835600614705 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +488,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		226862262B53082800140536 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -405,6 +502,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22DE18492B6997EF00239FE6 /* ScrollDetector.swift in Sources */,
 				22B916BB2B2F188700AE8208 /* TintColor.swift in Sources */,
 				22B916BD2B31C07A00AE8208 /* Recents.swift in Sources */,
 				22FA90A12B3A121B00358135 /* DateFilterView.swift in Sources */,
@@ -416,6 +514,7 @@
 				22B916B92B2F15F700AE8208 /* Transaction.swift in Sources */,
 				2247FEB42B4500A000C8DE1D /* ChartModel.swift in Sources */,
 				22FA90C22B3E3B1C00358135 /* TransactionsView.swift in Sources */,
+				222967F72B59E4D000A3FB3E /* BlueCardView.swift in Sources */,
 				224C90ED2B2956B5001F4BE7 /* Tab.swift in Sources */,
 				22B916C32B31C1AF00AE8208 /* Settings.swift in Sources */,
 				224C90D82B293DAC001F4BE7 /* InpensaApp.swift in Sources */,
@@ -426,7 +525,9 @@
 				224C90EB2B294CF2001F4BE7 /* Helpers.swift in Sources */,
 				22B916C12B31C0BF00AE8208 /* Graphs.swift in Sources */,
 				22B916B72B2F153D00AE8208 /* Category.swift in Sources */,
+				22DE18432B69935100239FE6 /* Test.swift in Sources */,
 				22FA909D2B37589A00358135 /* TransactionCardView.swift in Sources */,
+				22DE18412B698F1B00239FE6 /* Recents2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +558,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		226862242B53082800140536 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2268622B2B53082800140536 /* InpensaUITests.swift in Sources */,
+				222285202B53132B00EC378F /* TintColor.swift in Sources */,
+				2268622D2B53082800140536 /* InpensaUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -469,6 +580,11 @@
 			isa = PBXTargetDependency;
 			target = 2252221D2B4A345300D8BFB9 /* StatsCardViewExtension */;
 			targetProxy = 225222292B4A345400D8BFB9 /* PBXContainerItemProxy */;
+		};
+		2268622F2B53082800140536 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 224C90D32B293DAC001F4BE7 /* Inpensa */;
+			targetProxy = 2268622E2B53082800140536 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -615,7 +731,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.beyond2021.Inpensa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -647,7 +763,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.beyond2021.Inpensa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -752,6 +868,42 @@
 			};
 			name = Release;
 		};
+		226862302B53082800140536 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SC6R6MV2N8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.beyond2021.InpensaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Inpensa;
+			};
+			name = Debug;
+		};
+		226862312B53082800140536 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SC6R6MV2N8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.beyond2021.InpensaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Inpensa;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -787,6 +939,15 @@
 			buildConfigurations = (
 				2252222D2B4A345400D8BFB9 /* Debug */,
 				2252222E2B4A345400D8BFB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		226862322B53082800140536 /* Build configuration list for PBXNativeTarget "InpensaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				226862302B53082800140536 /* Debug */,
+				226862312B53082800140536 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

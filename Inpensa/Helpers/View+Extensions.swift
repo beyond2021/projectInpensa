@@ -53,3 +53,20 @@ extension View {
         }
     }
 }
+extension Color {
+    public static var appOrange: Color {
+        return Color(UIColor(red: 168/255, green: 87/255, blue: 81/255, alpha: 1.0))
+    }
+    public static var appPink: Color {
+        return Color(UIColor(red: 201/255, green: 123/255, blue: 132/255, alpha: 1.0))
+    }
+    public static var appPurple: Color {
+        return Color(UIColor(red: 125/255, green: 46/255, blue: 104/255, alpha: 1.0))
+    }
+    public static var appDarkBlue: Color {
+        return Color(UIColor(red: 4/255, green: 9/255, blue: 38/255, alpha: 1.0))
+    }
+    public static var appBViolet: Color {
+        return Color(UIColor(red: 37/255, green: 19/255, blue: 81/255, alpha: 1.0))
+    }
+}

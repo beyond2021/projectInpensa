@@ -1,14 +1,17 @@
 //
-//  Recents.swift
+//  Recents2.swift
 //  Inpensa
 //
-//  Created by KEEVIN MITCHELL on 12/19/23.
-// READING DATA
+//  Created by KEEVIN MITCHELL on 1/30/24.
+//
 
 import SwiftUI
 import SwiftData
 
-struct Recents: View {
+struct Recents2: View {
+    //
+    var size: CGSize
+    var safeArea: EdgeInsets
     /// User Properties
     @AppStorage("userName") private var userName: String = ""
     /// View Properties
@@ -37,7 +40,7 @@ struct Recents: View {
                             }, label: {
                                 Text("\(format(date: startDate,format: "dd - MMM yy")) to \(format(date: endDate,format: "dd - MMM yy"))")
                                     .font(.caption2)
-                                    .foregroundStyle(appTint)
+                                    .foregroundStyle(.gray)
                             })
                             .hSpacing(.leading)
                             
@@ -96,7 +99,7 @@ struct Recents: View {
             VStack(alignment: .leading, spacing: 5, content: {
 //                Text("Inpensa!")
 //                    .font(.title.bold())
-               Image("INPENSADARKBLUE")
+               Image("BlueLogo")
 //                    .resizable()
                     
                 
@@ -106,7 +109,7 @@ struct Recents: View {
                 if !userName.isEmpty {
                     Text(userName)
                         .font(.callout)
-                        .foregroundStyle(appTint)
+                        .foregroundStyle(.gray)
                 }
             })
             .visualEffect { content, geometryProxy in
@@ -124,7 +127,7 @@ struct Recents: View {
                     .fontWeight(.semibold)
                     .foregroundStyle(.white)
                     .frame(width: 45, height: 45)
-                    .background(Color("InpensaPurple").gradient, in: .circle)
+                    .background(appTint.gradient, in: .circle)
                     .contentShape(.circle)
             }
         }
@@ -206,7 +209,7 @@ struct Recents: View {
         HStack(spacing: 0) {
             ForEach(Category.allCases, id: \.rawValue) { category in
                 Text(category.rawValue)
-                    .foregroundStyle(appTint)
+                    .foregroundStyle(.blue)
                     .hSpacing()
                     .padding(.vertical, 10)
                     .background {
@@ -255,11 +258,43 @@ struct Recents: View {
         }
         .padding(15)
     }
-    
-   //
-  
+}
+
+struct Home_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+
+fileprivate extension View {
+    func moveText(_ progress: CGFloat, _ headerHeight: CGFloat, _ minimumHeaderHeight: CGFloat) -> some View {
+        self
+            .hidden()
+            .overlay {
+                GeometryReader { proxy in
+                    let rect = proxy.frame(in: .global)
+                    let midY = rect.midY
+                    /// Half Scaled Text Height (Since Text Scaling will be 0.85 (1 - 0.15))
+                    let halfScaledTextHeight = (rect.height * 0.85) / 2
+                    /// Profile Image
+                    let profileImageHeight = (headerHeight * 0.5)
+                    /// Since Image Scaling will be 0.3 (1 - 0.7)
+                    let scaledImageHeight = profileImageHeight * 0.3
+                    let halfScaledImageHeight = scaledImageHeight / 2
+                    /// Applied VStack Spacing is 15
+                    /// 15 / 0.3 = 4.5 (0.3 -> Image Scaling)
+                    let vStackSpacing: CGFloat = 4.5
+                    let resizedOffsetY = (midY - (minimumHeaderHeight - halfScaledTextHeight - vStackSpacing - halfScaledImageHeight))
+                    
+                    self
+                        .scaleEffect(1 - (progress * 0.15))
+                        .offset(y: -resizedOffsetY * progress)
+                }
+            }
+    }
 }
 
 #Preview {
     ContentView()
 }
+

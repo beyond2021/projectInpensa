@@ -23,7 +23,9 @@ struct TransactionsView: View {
     @State private var dateAdded: Date = .now
     @State private var category: Category = .expense
     // Random Tint
-    @State var tint: TintColor = tints.randomElement()!
+   // @State var tint: TintColor = tints.randomElement()!
+    // App Colors
+    @State var tint: TintColor = appTints.randomElement()!
     var body: some View {
         ScrollView(.vertical) {
             VStack( spacing: 15) {
@@ -98,6 +100,7 @@ struct TransactionsView: View {
                 if let tint = editTransaction.tint {
                     self.tint = tint
                 }
+               
 
             }
         })
@@ -113,6 +116,8 @@ struct TransactionsView: View {
             editTransaction?.category = category.rawValue
             editTransaction?.dateAdded = dateAdded
         } else {
+//            tint = tints.randomElement()!
+            print(tint)
             // Adding New Transaction
             let transaction = Transaction(title: title, remarks: remarks, amount: amount, dateAdded: dateAdded, category: category, tintColor: tint)
             context.insert(transaction)

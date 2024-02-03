@@ -10,4 +10,5 @@ import SwiftUI
 /*
  AppTint variable will be used through out the App
  */
-let appTint: Color = .blue
+let appTint: Color = Color.appBViolet
+//let appFont: fontf

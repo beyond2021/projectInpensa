@@ -16,11 +16,21 @@ struct TintColor: Identifiable {
 }
 
 // Available Colors Array
-var tints: [TintColor] = [
-    .init(color: "Red", value: .red), // .init creates a color
-    .init(color: "Blue", value: .blue),
-    .init(color: "Red", value: .red),
-    .init(color: "Blue", value: .blue),
-    .init(color: "Brown", value: .brown),
-    .init(color: "Orange", value: .orange)
+//var tints: [TintColor] = [
+//    .init(color: "Red", value: .red), // .init creates a color
+//    .init(color: "Blue", value: .blue),
+//    .init(color: "Red", value: .red),
+//    .init(color: "Blue", value: .blue),
+//    .init(color: "Brown", value: .brown),
+//    .init(color: "Orange", value: .orange)
+//]
+
+var appTints: [TintColor] = [
+    .init(color: "AppViolet", value: .appBViolet), // .init creates a color
+    .init(color: "InpensaOrange", value: .appOrange),
+    .init(color: "InpensaPink", value: .appPink),
+    .init(color: "InpensaPurple", value: .appPurple),
+    .init(color: "oxfordBlue", value: .appDarkBlue),
+   // .init(color: "Orange", value: .orange)
+
 ]
