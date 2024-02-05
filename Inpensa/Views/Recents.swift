@@ -21,6 +21,10 @@ struct Recents: View {
     
     /// View Properties
     @State private var offsetY: CGFloat = 0
+    // Input Data
+    @State private var showingInputDataOptions = false
+    
+    @AppStorage("dataInputSelectionType") private var selection: String = DataInputType.manual.rawValue
   
     var body: some View {
         GeometryReader {
@@ -86,6 +90,11 @@ struct Recents: View {
                 }
             }
             .animation(.snappy, value: showFilterView)
+            .sheet(isPresented: $showingInputDataOptions) {
+                       Text("INPENSA")
+                   
+                            .presentationDetents([.medium, .large])
+                    }
         }
     }
     
@@ -116,17 +125,48 @@ struct Recents: View {
             
             Spacer(minLength: 0)
             
-            NavigationLink {
-                TransactionsView()
-            } label: {
-                Image(systemName: "plus")
-                    .font(.title3)
-                    .fontWeight(.semibold)
-                    .foregroundStyle(.white)
-                    .frame(width: 45, height: 45)
-                    .background(Color("InpensaPurple").gradient, in: .circle)
-                    .contentShape(.circle)
+           
+            
+            
+            HStack(spacing: 10) {
+                NavigationLink {
+                    TransactionsView()
+                } label: {
+                    Image(systemName: "plus")
+                        .font(.title3)
+                        .fontWeight(.semibold)
+                        .foregroundStyle(.white)
+                        .frame(width: 45, height: 45)
+                        .background(appTint.gradient, in: .circle)
+                        .contentShape(.circle)
+                }
+                
+                NavigationLink {
+                    VoiceEntryView()
+                } label: {
+                    Image(systemName: "mic")
+                        .font(.title3)
+                        .fontWeight(.semibold)
+                        .foregroundStyle(.white)
+                        .frame(width: 45, height: 45)
+                        .background(appTint.gradient, in: .circle)
+                        .contentShape(.circle)
+                }
+                
+                NavigationLink {
+                    ReceiptEntryView()
+                } label: {
+                    Image(systemName: "camera")
+                        .font(.title3)
+                        .fontWeight(.semibold)
+                        .foregroundStyle(.white)
+                        .frame(width: 45, height: 45)
+                        .background(appTint.gradient, in: .circle)
+                        .contentShape(.circle)
+                }
             }
+            
+     
         }
         .padding(.bottom, userName.isEmpty ? 10 : 5)
         .background {
@@ -145,61 +185,7 @@ struct Recents: View {
             .padding(.top, -(safeArea.top + 15))
         }
     }
-    
-    func BlueHeaderView(_ size: CGSize) -> some View {
- 
-            HStack(spacing: 10) {
-                VStack(alignment: .leading, spacing: 5, content: {
-                    Text("Inpensa!")
-                        .font(.title.bold())
-                        .foregroundStyle(.blue)
-                        
-                  //  Image("BlueLogoLG")
-                    
-                    if !userName.isEmpty {
-                        Text(userName)
-                            .font(.callout.bold())
-                            .foregroundStyle(.blue)
-                    }
-                })
-                .visualEffect { content, geometryProxy in
-                    content
-                        .scaleEffect(headerScale(size, proxy: geometryProxy), anchor: .topLeading)
-                }
-                
-                Spacer(minLength: 0)
-                
-                NavigationLink {
-                    TransactionsView()
-                } label: {
-                    Image(systemName: "plus")
-                        .font(.title3)
-                        .fontWeight(.semibold)
-                        .foregroundStyle(.white)
-                        .frame(width: 45, height: 45)
-                        .background(appTint.gradient, in: .circle)
-                        .contentShape(.circle)
-                }
-            }
-            .padding(.bottom, userName.isEmpty ? 10 : 5)
-            .background {
-                VStack(spacing: 0) {
-                    Rectangle()
-                        .fill(.ultraThinMaterial)
-                        
-                    
-                    Divider()
-                }
-                .visualEffect { content, geometryProxy in
-                    content
-                        .opacity(headerBGOpacity(geometryProxy))
-                }
-                .padding(.horizontal, -15)
-                .padding(.top, -(safeArea.top + 15))
-            }
 
-    }
-    
     /// Segmented Control
     @ViewBuilder
     func CustomSegmentedControl() -> some View {

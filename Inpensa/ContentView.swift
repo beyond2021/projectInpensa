@@ -24,6 +24,8 @@ struct ContentView: View {
     // App loch Properties
     @AppStorage("isAppLockEnabled") private var isAppLockEnabled: Bool = false
     @AppStorage("lockWhenAppGoesTobackground") private var lockWhenAppGoesTobackground: Bool = false
+    
+   
     var body: some View {
         LockView(lockType: .biometric, lockPin: "", isEnabled: isAppLockEnabled, lockWhenAppGoesToBG: lockWhenAppGoesTobackground) {
             TabView(selection: $activeTab) {

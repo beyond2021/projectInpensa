@@ -24,7 +24,7 @@ struct Settings: View {
                         Toggle("lock When App Goes To background", isOn: $lockWhenAppGoesTobackground)
                     }
                 }
-
+                
             }
             .navigationTitle("Settings")
             .background(.gray.opacity(0.25))
