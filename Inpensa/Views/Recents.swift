@@ -32,62 +32,66 @@ struct Recents: View {
             let size = $0.size
             
             NavigationStack {
-                ScrollView(.vertical) {
-                    LazyVStack(spacing: 10, pinnedViews: [.sectionHeaders]) {
-                        Section {
-                            /// Date Filter Button
-                            Button(action: {
-                                showFilterView = true
-                            }, label: {
-                                Text("\(format(date: startDate,format: "dd - MMM yy")) to \(format(date: endDate,format: "dd - MMM yy"))")
-                                    .font(.caption2)
-                                    .foregroundStyle(appTint)
-                            })
-                            .hSpacing(.leading)
-                            
-                            FilterTransactionsView(startDate: startDate, endDate: endDate) { transactions in
-                                /// Card View
-                                CardView(
-                                    income: total(transactions, category: .income),
-                                    expense: total(transactions, category: .expense)
-                                )
+               
+                   
+                    ScrollView(.vertical) {
+                        LazyVStack(spacing: 10, pinnedViews: [.sectionHeaders]) {
+                            Section {
+                                /// Date Filter Button
+                                Button(action: {
+                                    showFilterView = true
+                                }, label: {
+                                    Text("\(format(date: startDate,format: "dd - MMM yy")) to \(format(date: endDate,format: "dd - MMM yy"))")
+                                        .font(.caption2)
+                                        .foregroundStyle(appTint)
+                                })
+                                .hSpacing(.leading)
                                 
-                                /// Custom Segmented Control
-                                CustomSegmentedControl()
-                                    .padding(.bottom, 10)
-                                
-                                ForEach(transactions.filter({ $0.category == selectedCategory.rawValue })) { transaction in
-                                    NavigationLink(value: transaction) {
-                                        TransactionCardView(transaction: transaction)
+                                FilterTransactionsView(startDate: startDate, endDate: endDate) { transactions in
+                                    /// Card View
+                                    CardView(
+                                        income: total(transactions, category: .income),
+                                        expense: total(transactions, category: .expense)
+                                    )
+                                    
+                                    /// Custom Segmented Control
+                                    CustomSegmentedControl()
+                                        .padding(.bottom, 10)
+                                    
+                                    ForEach(transactions.filter({ $0.category == selectedCategory.rawValue })) { transaction in
+                                        NavigationLink(value: transaction) {
+                                            TransactionCardView(transaction: transaction)
+                                        }
+                                        .buttonStyle(.plain)
                                     }
-                                    .buttonStyle(.plain)
                                 }
+                            } header: {
+                                HeaderView(size)
+                                //BlueHeaderView(size)
                             }
-                        } header: {
-                            HeaderView(size)
-                           //BlueHeaderView(size)
                         }
+                        .padding(15)
                     }
-                    .padding(15)
+                    .background(.gray.opacity(0.25))
+                    .blur(radius: showFilterView ? 8 : 0)
+                    .disabled(showFilterView)
+                    .navigationDestination(for: Transaction.self) { transaction in
+                        TransactionsView(editTransaction: transaction)
+                    }
                 }
-                .background(.gray.opacity(0.25))
-                .blur(radius: showFilterView ? 8 : 0)
-                .disabled(showFilterView)
-                .navigationDestination(for: Transaction.self) { transaction in
-                    TransactionsView(editTransaction: transaction)
-                }
-            }
-            .overlay {
-                if showFilterView {
-                    DateFilterView(start: startDate, end: endDate, onSubmit: { start, end in
-                        startDate = start
-                        endDate = end
-                        showFilterView = false
-                    }, onClose: {
-                        showFilterView = false
-                    })
-                    .transition(.move(edge: .leading))
-                }
+                .overlay {
+                    if showFilterView {
+                        DateFilterView(start: startDate, end: endDate, onSubmit: { start, end in
+                            startDate = start
+                            endDate = end
+                            showFilterView = false
+                        }, onClose: {
+                            showFilterView = false
+                        })
+                        .transition(.move(edge: .leading))
+                    }
+               
+                
             }
             .animation(.snappy, value: showFilterView)
             .sheet(isPresented: $showingInputDataOptions) {
@@ -95,6 +99,14 @@ struct Recents: View {
                    
                             .presentationDetents([.medium, .large])
                     }
+            .overlay(alignment: .bottomTrailing, content: {
+               // ReelDetailsView()
+                AIButtons()
+                    .padding(.leading, 15)
+                    .padding(.trailing, 20)
+                    .padding(.bottom, safeArea.bottom + 15)
+            })
+
         }
     }
     
@@ -140,30 +152,8 @@ struct Recents: View {
                         .background(appTint.gradient, in: .circle)
                         .contentShape(.circle)
                 }
+                // AI Buttons
                 
-                NavigationLink {
-                    VoiceEntryView()
-                } label: {
-                    Image(systemName: "mic")
-                        .font(.title3)
-                        .fontWeight(.semibold)
-                        .foregroundStyle(.white)
-                        .frame(width: 45, height: 45)
-                        .background(appTint.gradient, in: .circle)
-                        .contentShape(.circle)
-                }
-                
-                NavigationLink {
-                    ReceiptEntryView()
-                } label: {
-                    Image(systemName: "camera")
-                        .font(.title3)
-                        .fontWeight(.semibold)
-                        .foregroundStyle(.white)
-                        .frame(width: 45, height: 45)
-                        .background(appTint.gradient, in: .circle)
-                        .contentShape(.circle)
-                }
             }
             
      
@@ -242,7 +232,38 @@ struct Recents: View {
         .padding(15)
     }
     
-   //
+   @ViewBuilder
+    func AIButtons() -> some View {
+        VStack( spacing: 20) {
+            Button {
+                
+            } label: {
+                Image(systemName: "mic")
+                    .font(.title3)
+                    .fontWeight(.semibold)
+                    .foregroundStyle(.white)
+                    .frame(width: 45, height: 45)
+                    .background(appTint.gradient, in: .circle)
+                    .contentShape(.circle)
+            }
+            
+            Button {
+                
+            } label: {
+                Image(systemName: "doc.viewfinder.fill")
+                    .font(.title3)
+                    .fontWeight(.semibold)
+                    .foregroundStyle(.white)
+                    .frame(width: 45, height: 45)
+                    .background(appTint.gradient, in: .circle)
+                    .contentShape(.circle)
+            }
+
+        }
+    
+    }
+  
+  
   
 }
 

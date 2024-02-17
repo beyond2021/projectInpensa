@@ -33,13 +33,14 @@
 		225222382B4A3FC900D8BFB9 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B916B82B2F15F700AE8208 /* Transaction.swift */; };
 		225222392B4A404200D8BFB9 /* TintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B916BA2B2F188700AE8208 /* TintColor.swift */; };
 		2256BE842B4D734D00DC834A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2256BE832B4D734D00DC834A /* Assets.xcassets */; };
-		2256BE8E2B4D798D00DC834A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2256BE8D2B4D798D00DC834A /* Assets.xcassets */; };
 		225D0B2C2B492D8F00478FFD /* FilterTransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225D0B2B2B492D8F00478FFD /* FilterTransactionsView.swift */; };
 		225E04412B6F373800665926 /* DataInputType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225E04402B6F373800665926 /* DataInputType.swift */; };
 		225E04442B6F3EBD00665926 /* VoiceEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225E04432B6F3EBD00665926 /* VoiceEntryView.swift */; };
 		225E04462B6F3EE500665926 /* ReceiptEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225E04452B6F3EE500665926 /* ReceiptEntryView.swift */; };
 		2268622B2B53082800140536 /* InpensaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2268622A2B53082800140536 /* InpensaUITests.swift */; };
 		2268622D2B53082800140536 /* InpensaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2268622C2B53082800140536 /* InpensaUITestsLaunchTests.swift */; };
+		22A7EF6E2B80EFE200F93EB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22A7EF6D2B80EFE100F93EB9 /* Assets.xcassets */; };
+		22A7EF702B80F0E900F93EB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22A7EF6F2B80F0E900F93EB9 /* Assets.xcassets */; };
 		22B916B72B2F153D00AE8208 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B916B62B2F153D00AE8208 /* Category.swift */; };
 		22B916B92B2F15F700AE8208 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B916B82B2F15F700AE8208 /* Transaction.swift */; };
 		22B916BB2B2F188700AE8208 /* TintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B916BA2B2F188700AE8208 /* TintColor.swift */; };
@@ -49,7 +50,6 @@
 		22B916C32B31C1AF00AE8208 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B916C22B31C1AF00AE8208 /* Settings.swift */; };
 		22DE18412B698F1B00239FE6 /* Recents2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DE18402B698F1B00239FE6 /* Recents2.swift */; };
 		22DE18432B69935100239FE6 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DE18422B69935100239FE6 /* Test.swift */; };
-		22DE18462B69976500239FE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22DE18452B69976500239FE6 /* Assets.xcassets */; };
 		22FA90962B32225200358135 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA90952B32225200358135 /* View+Extensions.swift */; };
 		22FA90982B37268200358135 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA90972B37268200358135 /* Date+Extensions.swift */; };
 		22FA909B2B37337B00358135 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA909A2B37337B00358135 /* CardView.swift */; };
@@ -118,7 +118,6 @@
 		225222242B4A345300D8BFB9 /* StatsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsCardView.swift; sourceTree = "<group>"; };
 		225222282B4A345400D8BFB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2256BE832B4D734D00DC834A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2256BE8D2B4D798D00DC834A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../Downloads/Expense Tracker/Expense Tracker/Assets.xcassets"; sourceTree = "<group>"; };
 		225D0B122B491D6600478FFD /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		225D0B142B491D6600478FFD /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		225D0B2B2B492D8F00478FFD /* FilterTransactionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterTransactionsView.swift; sourceTree = "<group>"; };
@@ -128,6 +127,8 @@
 		226862282B53082800140536 /* InpensaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InpensaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2268622A2B53082800140536 /* InpensaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InpensaUITests.swift; sourceTree = "<group>"; };
 		2268622C2B53082800140536 /* InpensaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InpensaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		22A7EF6D2B80EFE100F93EB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../ReceiptInput/ReceiptInput/Assets.xcassets; sourceTree = "<group>"; };
+		22A7EF6F2B80F0E900F93EB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/AppIcons/Assets.xcassets; sourceTree = "<group>"; };
 		22B916B62B2F153D00AE8208 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		22B916B82B2F15F700AE8208 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		22B916BA2B2F188700AE8208 /* TintColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TintColor.swift; sourceTree = "<group>"; };
@@ -137,7 +138,6 @@
 		22B916C22B31C1AF00AE8208 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		22DE18402B698F1B00239FE6 /* Recents2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recents2.swift; sourceTree = "<group>"; };
 		22DE18422B69935100239FE6 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
-		22DE18452B69976500239FE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/ResizableHeader/ResizableHeader/Assets.xcassets; sourceTree = "<group>"; };
 		22FA90952B32225200358135 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		22FA90972B37268200358135 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		22FA909A2B37337B00358135 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -215,8 +215,8 @@
 				224C90E52B2943A0001F4BE7 /* Views */,
 				224C90D72B293DAC001F4BE7 /* InpensaApp.swift */,
 				224C90D92B293DAC001F4BE7 /* ContentView.swift */,
-				2256BE8D2B4D798D00DC834A /* Assets.xcassets */,
-				22DE18452B69976500239FE6 /* Assets.xcassets */,
+				22A7EF6D2B80EFE100F93EB9 /* Assets.xcassets */,
+				22A7EF6F2B80F0E900F93EB9 /* Assets.xcassets */,
 				224C90DD2B293DAE001F4BE7 /* Preview Content */,
 			);
 			path = Inpensa;
@@ -462,8 +462,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2256BE842B4D734D00DC834A /* Assets.xcassets in Resources */,
-				2256BE8E2B4D798D00DC834A /* Assets.xcassets in Resources */,
-				22DE18462B69976500239FE6 /* Assets.xcassets in Resources */,
+				22A7EF6E2B80EFE200F93EB9 /* Assets.xcassets in Resources */,
+				22A7EF702B80F0E900F93EB9 /* Assets.xcassets in Resources */,
 				224C90DF2B293DAE001F4BE7 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
